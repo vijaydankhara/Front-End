@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+a:link {
+    background-color: red;
+    color: aqua !important;
+} */
+
+/* a:visited {
+    background-color: blue;
+    font-size: 80px;
+    text-shadow: 20px 20px 5px green;
+} */
+
+/* a:hover {
+    color: red;
+    font-size: 80px;
+    background-color: beige;
+} */
+
+a:active {
+    background-color: navy;
+    color: white;
+    /* font-size: 50px; */
+}
+
+/* :root{
+    color: green;
+} */
+
+/* p:first-child{
+    color: red;
+    font-size: 30px;
+} */
+/* p:last-child{
+    color: rgb(0, 89, 255);
+    font-size: 40px;
+} */
+
+/* p:nth-child(2n){
+    color: azure;
+    background-color: black;
+
+} */
+/* p:nth-child(2n+1){
+    color: rgb(10, 26, 248);
+    background-color: rgb(228, 235, 87);
+
+} */
+
+/* p:nth-child(odd){
+    color: brown;
+    background-color: cadetblue;
+} */
+
+/* p:nth-child(even){
+    color: tomato;
+    background-color: yellowgreen;
+} */
+
+
+/* Pesudo element */
+::selection{
+    color: black;
+    background-color: aquamarine;
+}
+
+p::first-line{
+    color: green;
+    background-color: yellow;
+    font-size: 30px;
+}
+
+p::first-letter{
+    color: red;
+    font-size: 50px;
+}
+
+h1::before{
+    content: "==>  ||  ";
+}
+h1::after{
+    content: "   ||  <==";
+}
+
+ul{
+    margin-left: 70px;
+}
+
+li::marker{
+    color: red;
+font-size: 40px;    
+}

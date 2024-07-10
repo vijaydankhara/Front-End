@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation request</title>
+    <link rel="icon" type="image/x-icon" href="/asset/vijay_logo.png">
+    
+    <style>
+        body {
+    border: 2px solid rgb(9, 9, 9);
+    height: 580px;
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    
+}
+span{
+    color: red;
+    padding-left: 10px;
+}
+    </style>
+    
+</head>
+
+<body>
+    
+
+    <h1 style="margin-left:20px;" >Reservation Request</h1>
+
+    <form name="reservation_form" id="reservation_form">
+
+        <fieldset>
+
+            <legend style="color: blue;"><b>General Information</b></legend>
+
+            <label for="arrival_date">Arrival date:</label>
+            <input type="text" name="arrival_date" size="25" placeholder="12/39/2016"> <span> Arrival date is invalid</span><br><br>
+
+            <label for="nights"> Nights:</label>
+            <input type="text" name="nights" size="25" placeholder="three"><span> Night must be a number</span> <br><br>
+              
+
+
+            <label>Adults:</label>
+            <select name="adults" id="adults">
+
+                <option value="1">1</option>
+
+                <option value="2">2</option>
+
+                <option value="3">3</option>
+
+                <option value="4">4</option>
+
+            </select><br><br>
+
+
+            <label>Children:</label>
+
+            <select name="children" id="children">
+
+                <option value="0">0</option>
+
+                <option value="1">1</option>
+
+                <option value="2">2</option>
+
+                <option value="3">3</option>
+
+                <option value="4">4</option>
+
+            </select><br>
+
+        </fieldset>
+
+    </form>
+    <br>
+
+
+    <fieldset>
+
+        <legend style="color: blue;"><b>Preferences</b></legend>
+
+        <label>Room type:</label>
+        <input type="radio" name="room" id="standard" value="standard" checked>Standard
+
+        <input type="radio" name="room" id="business" value="business">Business
+
+        <input type="radio" name="room" id="suite" value="suite">Suite<br>
+
+        <label>Bed type:</label>
+        <input type="radio" name="bed" id="king" value="king" checked>King
+
+        <input type="radio" name="bed" id="business" value="business">Business<br>
+
+        <input type="checkbox" name="smoking" id="smoking" value="smoking">Smoking<br>
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+
+        <legend style="color: blue;"><b>General Information</b></legend>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name"><span>Name is requride</span> <br><br>
+
+        <label for="Email"> Email:</label>
+        <input type="text" name="Email" size="25" placeholder="skillgmail.com"><span>Email address is invalid</span> <br><br>
+
+        <label for="phone"> Phone:</label>
+        <input type="text" name="phone" size="25" placeholder="123-456-789"><span>Phone number is invelide</span> <br><br>
+
+    </fieldset>
+    <br>
+    <input style="margin-left:10px;" type="button" id="submit_request" value="Submit Reservation">
+
+    <input style="margin-left:20px;" type="button" id="clear" value="Clear"><br>
+
+
+
+
+
+</body>
+
+</html>

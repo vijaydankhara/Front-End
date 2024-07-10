@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: initial;
+}
+body {
+    background-color: rgb(38, 133, 38);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }

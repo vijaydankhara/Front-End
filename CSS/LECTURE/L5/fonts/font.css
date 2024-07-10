@@ -1,0 +1,38 @@
+div{
+    color: rgb(17, 0, 255);
+    font-size: 50px;
+}
+
+/* TEXT STYLE */
+.font1{
+    font-size: large;
+}
+.font2{
+    font-size:medium;
+}
+.font3{
+    font-size:small;
+}
+.font4{
+    font-size:x-large;
+}
+.font5{
+    font-size: xx-small;
+}
+
+/* FONT FAMILY */
+.font6{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.font7{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.font8{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.font9{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font10{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

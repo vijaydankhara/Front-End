@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color-whi: white;
+$color-bla: black;
+$mid: center;
+$dis-flex: flex;
+$none-data: none;
+$flex-dire-col: column;
+$spa-aro:space-around;
+$spa-eve:space-evenly;
+$font25:25px;
+$font20:20px;
+$font30:30px;
+$font40:40px;
+$wid-100:100%;
+$hei-400:400px;
+
+@mixin footer {
+    height: 250px;
+    width: 180px;
+    display: $dis-flex;
+    flex-direction: $flex-dire-col;
+    align-items: $mid;
+    padding-top: $font30;
+
+    h2 {
+        font-size: $font25;
+    }
+
+    ul {
+        padding-top: $font20;
+        display: $dis-flex;
+        flex-direction: $flex-dire-col;
+        align-items: $mid;
+    }
+
+    a {
+        text-decoration: $none-data;
+    }
+}
+
+.logo {
+    float: inline-start;
+    color: $color-whi;
+    font-size: $font20;
+    padding-left: 20px;
+}
+
+nav {
+    height: $font30;
+    width: $wid-100;
+    background-color: rgb(248, 60, 27);
+
+    ul {
+        font-size: $font20;
+        color: $color-whi;
+        display: $dis-flex;
+        justify-content: $spa-aro;
+        align-items: $mid;
+        text-align: $mid;
+
+        li {
+            list-style: $none-data;
+
+            a {
+                float: inline-end;
+                text-decoration: $none-data;
+                color: $color-whi;
+                align-items: $mid;
+            }
+        }
+    }
+}
+
+.background {
+    background-image: url(../assent/bg2.png);
+    height: 500px;
+    width: $wid-100;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: $mid;
+}
+
+
+h1 {
+    text-align: $mid;
+    padding-top: 120px;
+    font-size: $font40;
+    color: $color-whi;
+}
+
+.text {
+    padding-top: 50px;
+    height: $font30;
+    width: 600px;
+    text-align: $mid;
+    margin-left: 350px;
+    font-size: $font20;
+    color: $color-whi;
+    font-weight: bold;
+}
+
+// fotter section
+.container2 {
+    background-color: $color-whi;
+    width: $wid-100;
+    height: $hei-400;
+    color: $color-bla;
+}
+
+.footer-section {
+    width: $wid-100;
+    height: $hei-400;
+    display: $dis-flex;
+    align-items: $mid;
+    justify-content: $spa-aro;
+    padding: 0 60px;
+}
+
+.ecommerce {
+    height: 250px;
+    width: 280px;
+    padding: 10px;
+
+    h2 {
+        font-size: $font20;
+        color: $color-bla;
+        margin-left: -55px;
+    }
+
+    p {
+        padding-top: $font30;
+        font-size: 17px;
+    }
+}
+
+.eco-logo {
+    display: $dis-flex;
+    justify-content: $spa-aro;
+    margin-top: 10px;
+
+    #fa-shopware {
+        width: 45px;
+        height: 45px;
+        font-size: $font40;
+        background-color: rgb(245, 245, 245);
+        display: $dis-flex;
+        align-items: $mid;
+        padding-left: 2px;
+    }
+
+    h2 {
+        font-size: $font30;
+    }
+
+}
+
+.icone {
+    margin-top: $font30;
+    font-size: $font30;
+    display: $dis-flex;
+    justify-content: $spa-aro;
+}
+
+// Define the mixin with the shared styles
+@mixin vrd_css {
+    height: 250px;
+    width: 180px;
+    display: $dis-flex;
+    flex-direction: $flex-dire-col;
+    align-items: $mid;
+    padding-top: $font30;
+
+    h2 {
+        font-size: $font25;
+    }
+
+    ul {
+        padding-top: $font20;
+        display: $dis-flex;
+        flex-direction: $flex-dire-col;
+        align-items: $mid;
+        gap: $font30;
+        list-style: $none-data;
+
+        a {
+            text-decoration: $none-data;
+        }
+    }
+}
+
+// Use the mixin in each class
+.support {
+    @include vrd_css;
+}
+
+.company {
+    @include vrd_css;
+}
+
+.shop {
+    @include vrd_css;
+}
+
+.payment {
+    height: 250px;
+    width: 250px;
+
+    h2 {
+        font-size: $font25;
+        display: $dis-flex;
+        text-align: $mid;
+        padding-left: 15px;
+        padding-top: $font40;
+    }
+
+    .payments-logo {
+        padding-top: $font20;
+        font-size: $font25;
+        display: $dis-flex;
+        align-self: $mid;
+        justify-content: $spa-eve;
+    }
+
+
+}
+
+.copyRight {
+    width: $wid-100;
+    height: 50px;
+    background-color: $color-whi;
+    display: $dis-flex;
+    align-items: $mid;
+    justify-content: $mid;
+}

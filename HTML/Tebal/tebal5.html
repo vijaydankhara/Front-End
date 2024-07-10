@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2" rowspan="2">r1c1</td>
+            <td>r1c3</td>
+            <td rowspan="2">r1c4</td>
+            <td colspan="2" rowspan="2">r1c5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">r2c3</td>
+        </tr>
+        <tr>
+            <td colspan="2">r3c1</td>
+            <td colspan="2">r3c4</td>
+            <td>r3c6</td>
+        </tr>
+        <tr>
+            <td>r4c1</td>
+            <td colspan="2">r4c2</td>
+            <td rowspan="2">r4c4</td>
+            <td colspan="2">r4c5</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">r5c1</td>
+            <td rowspan="2">r5c3</td>
+            <td colspan="2" rowspan="2">r5c5</td>
+        </tr>
+        <tr>
+            <td>r6c4</td>
+        </tr>
+    </table>
+    <hr>
+
+
+    <!-- <table>
+        <tr>
+            <td colspan="" rowspan="" width="120" ,height="60">1</td>
+            <td colspan="" rowspan="" width="120" ,height="60">2</td>
+            <td colspan="" rowspan="" width="60" ,height="60">3</td>
+            <td colspan="" rowspan="" width="120" ,height="60">4</td>
+            <td colspan="" rowspan="" width="120" ,height="60">5</td>
+            <td colspan="" rowspan="" width="120" ,height="60">6</td>
+        </tr>
+
+        <tr>
+            <td colspan="" rowspan="" width="120" ,height="60">11</td>
+            <td colspan="" rowspan="" width="120" ,height="60">12</td>
+            <td colspan="" rowspan="" width="60" ,height="60">13</td>
+            <td colspan="" rowspan="" width="120" ,height="60">14</td>
+            <td colspan="" rowspan="" width="120" ,height="60">15</td>
+            <td colspan="" rowspan="" width="120" ,height="60">16</td>
+        </tr>
+
+        <tr>
+            <td colspan="" rowspan="" width="120" ,height="60">21</td>
+            <td colspan="" rowspan="" width="120" ,height="60">22</td>
+            <td colspan="" rowspan="" width="60" ,height="60">33</td>
+            <td colspan="" rowspan="" width="120" ,height="60">34</td>
+            <td colspan="" rowspan="" width="120" ,height="60">35</td>
+            <td colspan="" rowspan="" width="120" ,height="60">36</td>
+        </tr>
+
+
+        <tr>
+            <td colspan="" rowspan="" width="120" ,height="60">41</td>
+            <td colspan="" rowspan="" width="120" ,height="60">42</td>
+            <td colspan="" rowspan="" width="60" ,height="60">43</td>
+            <td colspan="" rowspan="" width="120" ,height="60">44</td>
+            <td colspan="" rowspan="" width="120" ,height="60">45</td>
+            <td colspan="" rowspan="" width="120" ,height="60">46</td>
+        </tr>
+
+        <tr>
+            <td colspan="" rowspan="" width="120" ,height="60">51</td>
+            <td colspan="" rowspan="" width="120" ,height="60">52</td>
+            <td colspan="" rowspan="" width="60" ,height="60">53</td>
+            <td colspan="" rowspan="" width="120" ,height="60">54</td>
+            <td colspan="" rowspan="" width="120" ,height="60">55</td>
+            <td colspan="" rowspan="" width="120" ,height="60">56</td>
+        </tr>
+
+        <tr>
+            <td colspan="" rowspan="" width="120" ,height="60">61</td>
+            <td colspan="" rowspan="" width="120" ,height="60">62</td>
+            <td colspan="" rowspan="" width="60" ,height="60">63</td>
+            <td colspan="" rowspan="" width="120" ,height="60">64</td>
+            <td colspan="" rowspan="" width="120" ,height="60">65</td>
+            <td colspan="" rowspan="" width="120" ,height="60">66</td>
+        </tr>
+
+    </table>
+
+<hr> -->
+
+
+<!-- 
+<table>
+    
+    <tr>
+        <td colspan="4" rowspan="2" width="120" ,height="60">1</td>
+        <td colspan="2" rowspan="1" width="60" ,height="30">2</td>
+        <td colspan="2" rowspan="2" width="60" ,height="60">5</td>
+        <td colspan="4" rowspan="2" width="120" ,height="60">6</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td> 
+        <td colspan="" rowspan="" width="30" ,height="30">2</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td> 
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2" width="60" ,height="60">4</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td> 
+    </tr>
+    <tr>
+        <td colspan="4" rowspan="1" width="120" ,height="30">3</td>
+        <td colspan="4" rowspan="1" width="120" ,height="30">7</td>
+        <td colspan="2" rowspan="" width="60" ,height="30">8</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td> 
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="1" width="60" ,height="30">9</td>
+        <td colspan="4" rowspan="1" width="120" ,height="30">10</td>
+        <td colspan="2" rowspan="2" width="60" ,height="60">13</td>
+        <td colspan="4" rowspan="1" width="120" ,height="30">14</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td> 
+    </tr>
+    <tr>
+        <td colspan="" rowspan="2" width="120" ,height="60">11</td>
+        <td colspan="2" rowspan="2" width="60" ,height="60">12</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="2" rowspan="1" width="60" ,height="30">15</td>
+        <td colspan="4" rowspan="2" width="120" ,height="60">16</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td> 
+    </tr>
+    <tr>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td>
+        <td colspan="" rowspan="" width="30" ,height="30">1</td> 
+    </tr>
+</table> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="6" rowspan="2">r1c1</td>
+            <td colspan="6">r1c3</td>
+            <td rowspan="5">r1c4</td>
+            <td colspan="2" rowspan="2">r1c5</td>
+        </tr>
+        <tr>
+            <td rowspan="2">r2c3</td>
+        </tr>
+        <tr>
+            <td colspan="2">r3c1</td>
+            <td colspan="2">r3c4</td>
+            <td>r3c6</td>
+        </tr>
+        <tr>
+            <td>r4c1</td>
+            <td colspan="4">r4c2</td>
+            <td rowspan="2">r4c4</td>
+            <td colspan="2">r4c5</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">r5c1</td>
+            <td rowspan="2">r5c3</td>
+            <td colspan="2" rowspan="2">r5c5</td>
+        </tr>
+        <tr>
+            <td>r6c4</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+</body>
+
+</html>

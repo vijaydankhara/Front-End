@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.padding{
+
+    color: brown;
+    border: 10px solid green;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    padding: 20px;
+    margin: 50px;
+    outline: 20px solid navy;
+    outline-offset: 20px;
+    border-radius: 10px;
+    text-align: center;
+}

@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  padding: 10px 0;
+  backdrop-filter: blur(20px);
+
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  padding: 10px;
+  border: 3px solid goldenrod;
+  background-color: aliceblue;
+
+}
+
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  text-shadow: 2px 2px 5px rgb(252, 108, 12);
+  transition: all 0.5s ease;
+  animation: fadeInUP 1s ease-in-out 0.5s backwards;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background-color: #b7b9b9;
+}
+
+::placeholder {
+  color: rgb(6, 6, 6);
+  font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #eaf68e;
+  outline: none;
+}
+
+/* button */
+.button {
+  background-color: aquamarine;
+  color: blue;
+  padding: 12px 16px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* cancel button */
+.resetbtn {
+  padding: 12px 16px;
+  background-color: #ff3e30;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.signupbtn {
+  padding: 12px 16px;
+  background-color: #338b18;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.resetbtn:hover {
+  background-color: rgb(255, 140, 0);
+}
+
+.signupbtn:hover {
+  background-color: rgb(255, 140, 0);
+}
+
+.resetbtn,
+.signupbtn {
+  width: 48%;
+}
+
+.clearfix {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@keyframes fadeInUP {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    color: blue;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    color: blue;
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 90%;
+    max-width: 280px;
+  }
+}

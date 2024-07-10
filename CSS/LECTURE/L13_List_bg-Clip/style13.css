@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Background Clip */
+.clip{
+    background-color: rgb(142, 250, 0);
+    height: 400px;
+    width: 500px;
+    margin: 30px auto;
+    border: 5px dashed rgb(0, 30, 254);
+    padding: 50px;
+    background-clip: border-box;
+    background-clip: content-box;
+    background-clip: padding-box;
+}
+
+/* Min Width */
+.min_width{
+    min-width: 300px;
+    max-width: 700px;
+    height: 400px;
+    background-color: rgb(0, 250, 233);
+    border: 5px dashed rgb(0, 30, 254);
+    padding: 50px;
+    margin: 30px auto;
+}
+
+/* Listing Style */
+.listing{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(125, 61, 252);
+    margin: 50px auto;
+    list-style-type: circle;
+    /* list-style-type: disc; */
+    /* list-style-type: armenian; */
+    /* list-style-type: decimal; */
+    /* list-style-type: square;  */
+    /* list-style-position: inside; */
+    /* list-style-position: outside; */
+    /* list-style-image: url('../../Project/asset/iwww.webp'); */
+}

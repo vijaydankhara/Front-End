@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: red;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 10px 10px 2px 1px blue;
+    /* box-shadow: 10px 10px 2px 1px peru inset; */
+}
+
+.text{
+    background-color: rgb(250, 124, 51);
+    height: 150px;
+    width: 1000px;
+    margin-left: 50px;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    /* justify-content: center;
+    align-items: center; */
+    /* display: flex; */
+    /* box-shadow: 10px 10px 2px 1px rgb(47, 255, 0); */
+    box-shadow: 10px 10px 2px 1px rgb(254, 11, 250) inset;
+}
+
+.text{
+    /* text transform */
+    text-transform: capitalize;
+    /* text-transform: lowercase;
+    text-transform: uppercase; */
+   
+    /* text Shadow */
+    text-shadow: 5px 5px 5px white;
+
+    /* text-aline */
+    /* text-align: end; */
+    text-align:center;
+    /* text-align: start; */
+
+
+    /* text-decoration-line */
+    /* text-decoration-line: line-through; */
+    /* text-decoration-line: overline; */
+    text-decoration-line: underline;
+
+
+/* text-decoration-color */
+text-decoration-color: rgb(19, 3, 238);
+/* text-decoration-color: yellow; */
+
+
+/* word space */
+/* word-spacing: 20px; */
+
+
+/* latter spaching */
+letter-spacing: 20px;
+}

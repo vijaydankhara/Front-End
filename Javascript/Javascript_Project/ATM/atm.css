@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto auto;
+    background: #e3f2fd;
+}
+
+.container {
+    position: relative;
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+    display: grid; /* Added */
+    grid-template-rows: auto 1fr auto; /* Added */
+    grid-gap: 10px; /* Added */
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 48px;
+    margin-right: 10px;
+}
+
+.logo h5 {
+    font-size: 20px;
+    color: white;
+}
+
+.chip img {
+    width: 60px;
+}
+
+.card-details {
+    color: white;
+}
+
+.name-number, .valid-thru {
+    text-align: center;
+}
+
+.card-details {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+h6 {
+    color: white;
+    font-size: 14px;
+}
+
+h5.number {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+h5.name {
+    font-size: 14px;
+}

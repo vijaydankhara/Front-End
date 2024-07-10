@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  float: inline-start;
+  color: white;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+nav {
+  height: 30px;
+  width: 100%;
+  background-color: rgb(248, 60, 27);
+}
+nav ul {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  float: inline-end;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+
+.background {
+  background-image: url(../assent/bg2.png);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 120px;
+  font-size: 40px;
+  color: white;
+}
+
+.text {
+  padding-top: 50px;
+  height: 30px;
+  width: 600px;
+  text-align: center;
+  margin-left: 350px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.container2 {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  color: black;
+}
+
+.footer-section {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 60px;
+}
+
+.ecommerce {
+  height: 250px;
+  width: 280px;
+  padding: 10px;
+}
+.ecommerce h2 {
+  font-size: 20px;
+  color: black;
+  margin-left: -55px;
+}
+.ecommerce p {
+  padding-top: 30px;
+  font-size: 17px;
+}
+
+.eco-logo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.eco-logo #fa-shopware {
+  width: 45px;
+  height: 45px;
+  font-size: 40px;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+}
+.eco-logo h2 {
+  font-size: 30px;
+}
+
+.icone {
+  margin-top: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.support {
+  height: 250px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.support h2 {
+  font-size: 25px;
+}
+.support ul {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+.support ul a {
+  text-decoration: none;
+}
+
+.company {
+  height: 250px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.company h2 {
+  font-size: 25px;
+}
+.company ul {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+.company ul a {
+  text-decoration: none;
+}
+
+.shop {
+  height: 250px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.shop h2 {
+  font-size: 25px;
+}
+.shop ul {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+.shop ul a {
+  text-decoration: none;
+}
+
+.payment {
+  height: 250px;
+  width: 250px;
+}
+.payment h2 {
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  padding-left: 15px;
+  padding-top: 40px;
+}
+.payment .payments-logo {
+  padding-top: 20px;
+  font-size: 25px;
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+}
+
+.copyRight {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=output.css.map */

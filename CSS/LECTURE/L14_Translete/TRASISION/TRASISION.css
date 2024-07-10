@@ -1,0 +1,99 @@
+.path{
+    border: 2px solid blue;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+}
+.delay{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+}
+.path:hover .delay{
+    width: 500px;
+    height: 500px;
+    transform: translate(900px);
+    transition-delay: 5s;
+}
+
+
+.duration{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(18, 224, 66);
+}
+.path:hover .duration{
+    width: 200px;
+    height: 200px;
+    transform: translate(900px);
+    transition-duration: 5s;
+}
+
+
+
+
+.propertices{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(237, 112, 11);
+}
+.path:hover .propertices{
+    width: 250px;
+    height: 250px;
+    transform: translate(300px);
+    transition-property: width height transform;
+}
+
+
+
+
+.timing-function-ease{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(250, 160, 81);
+}
+.path:hover .timing-function-ease{
+    width: 150px;
+    height: 150px;
+    transform: translate(400px);
+    transition-timing-function: ease;
+}
+
+.timing-function-ease-in{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(64, 12, 234);
+}
+.path:hover .timing-function-ease-in{
+    width: 150px;
+    height: 150px;
+    transform: translate(400px);
+    transition-timing-function: ease-in;
+}
+
+
+.timing-function-ease-out{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(165, 114, 185);
+}
+.path:hover .timing-function-ease-out{
+    width: 150px;
+    height: 150px;
+    transform: translate(400px);
+    transition-timing-function: ease-out;
+}
+
+.timing-function-ease-in-out{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(234, 12, 160);
+}
+.path:hover .timing-function-ease-in-out{
+    width: 150px;
+    height: 150px;
+    transform: translate(400px);
+    transition-timing-function: ease-in-out;
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image{
+    background-image: url("./asset/bg.jpg");
+    background-color: #cccccc;
+
+    /* BACKGROUND-POSITION */
+    /* background-position:center; */
+    
+    /* BACKGROUND-REPEAT */
+    /* background-repeat: repeat; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+
+    /* BACKGROUND-SIZE */
+    /* background-size: auto; */
+    /* background-size: contain; */
+    /* background-size: cover; */
+
+    /* BACKGROUND  */
+    /* background-attachment: fixed; */
+    /* background-attachment:scroll; */
+    /* background-attachment:unset; */
+
+}
+

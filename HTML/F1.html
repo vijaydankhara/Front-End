@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Registration Form</title> 
+    <style> 
+        table,tr,td{ 
+            border: 1px solid; 
+            /* border-collapse: collapse;  */
+            padding: 1px; 
+            width: 500px; 
+            text-align: center; 
+            height: 60px; 
+        } 
+        form{ 
+            display: table; 
+        } 
+        label{ 
+            display: table-cell; 
+            text-align: left; 
+        } 
+        input{ 
+            display: table-cell; 
+            text-align: left; 
+        } 
+        pre{ 
+            display: table-row; 
+        } 
+        div{ 
+            width: 500px; 
+            padding: 20px; 
+        } 
+        .content { 
+            max-width: 500px; 
+            margin: auto; 
+        } 
+             
+    </style> 
+</head> 
+ 
+<body> 
+    <div style="background-color: rgb(13, 232, 252);" class="content"> 
+    <table> 
+        <tr> 
+            <td> <h3><b>Student Registration Form </b></h3></td> 
+        </tr> 
+    </table> 
+    <br> 
+    <form> 
+ 
+    <pre> 
+    <label for="name"> Name :</label> 
+    <input type="text" name="name" size="30" placeholder="Enter full name"> 
+    </pre><br><br> 
+ 
+    <pre> 
+    <label for=" father name"> Father Name :</label> 
+    <input type="text" name="father name" size="30" > 
+    </pre><br><br> 
+ 
+    <pre> 
+    <label for="Mother name"> Mother Name : </label> 
+    <input type="text" name="name" size="30"> 
+    </pre><br><br> 
+ 
+    <pre> 
+    <label for="Phone number"> Phone Number :   </label> 
+    <input type="text" name="name" size="30" placeholder="+91 **********"> 
+    </pre><br><br> 
+ 
+    <pre> 
+    <label for="Email"> Email :</label> 
+    <input type="text" name="name" size="30" placeholder="Enter your email"> 
+    </pre><br><br> 
+ 
+    <pre>
+    <label for="gender"> Gender : </label> 
+    <input type="radio" name="gender" id="gender">Male    <input type="radio" name="gender" id="gender">Fmale   <input type="radio" name="gender" id="gender">Other
+</pre>
+<br>
+    <pre> 
+        <label for="date"> Date Of Birth : </label> 
+        <input type="date"><br> 
+    </pre> 
+ 
+    <pre>  
+        <label for="address"> Address</label> 
+        <input type="address" placeholder="Entert your address"> <br> 
+    </pre> 
+ 
+    <pre> 
+        <label for="bg"> Blood Group :</label> 
+        <select name="" id="" > 
+            <option value=""></option> 
+            <option value="">A+</option> 
+            <option value="">A-</option> 
+            <option value="">B+</option> 
+            <option value="">B-</option> 
+            <option value="">O+</option> 
+            <option value="">O-</option> 
+            <option value="">AB+</option> 
+            <option value="">AB-</option> 
+        </select><br> 
+    </pre> 
+ 
+    <label for="department">Department:</label>
+    <input type="radio" name="department" id="department">CSE
+    <input type="radio" name="department" id="department">EEE
+    <input type="radio" name="department" id="department">BBA
+    <br>
+
+ 
+    <pre> 
+        <label for="Course"> Course:</label> 
+        <input type="checkbox">C<input type="checkbox">C++<input type="checkbox">Java<input type="checkbox">AI<input type="checkbox">Machine learning<input type="checkbox">Robotics 
+    </pre> 
+ 
+
+            <label for="photo">Photo:</label>
+            <input type="file" name="photo" id="photo">
+
+            <br>
+ 
+        <input type="button" value="Submit" style="background-color: blue; color: aliceblue;"> 
+          <input type="reset" value="Reset" style="background-color: red;">
+   
+    </form> 
+    </div> 
+</body> 
+ 
+</html>

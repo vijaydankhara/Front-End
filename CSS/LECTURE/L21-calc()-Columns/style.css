@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+}
+
+/* The calc() Function */
+
+h1{text-align: center;
+    font-size: 40px;
+    color: blue;
+
+}
+#div1 {
+    width: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #div2 {
+    width: calc(100% - 200px);
+    border: 1px solid rgb(51, 12, 244);
+    background-color: rgb(30, 255, 0);
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #div3 {
+    width: calc(100% - 300px);
+    border: 1px solid rgb(237, 20, 20);
+    background-color: rgb(255, 115, 0);
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Create Multiple Columns */
+
+  .newspaper {
+    padding: 15px;
+    border: 2px solid red;
+    font-size: 20px;
+    color: green;
+    column-count: 3;
+    /* column-rule-width:  5px;
+    column-rule-style:  double;
+    column-rule-color: tomato; */
+    column-rule: 5px dotted blue;
+
+  }
+
+  .newspaper2 {
+    padding: 15px;
+    border: 2px solid darkgoldenrod;
+    margin-top: 40px;
+    font-size: 20px;
+    color: green;
+    column-count: 2;
+    column-rule: 5px dotted blue;
+
+  }

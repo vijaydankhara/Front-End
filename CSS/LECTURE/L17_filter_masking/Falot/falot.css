@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.falot{
+    border: 2px solid black;
+}
+
+.main1{
+/* float: left; */
+float: right;
+
+}
+.main2{
+    color: red;
+}
+.main3{
+    color: blue;
+    /* clear: left; */
+    /* clear: right; */
+}

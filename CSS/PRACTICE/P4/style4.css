@@ -1,0 +1,110 @@
+.color{
+    color: tomato;
+}
+
+.bgcolor{
+    background-color: aquamarine;
+}
+
+.radiuse{
+    color: blue;
+    background-color: pink;
+    border: 2px;
+    border-radius: 5px;
+}
+
+.multipal_border{
+    border-top: 2px solid red;
+    border-right: 5px dashed blue;
+    border-bottom: 7px dotted green;
+    border-left: 10px double yellow;
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+.borde{
+    border: 2px solid navy;
+}
+
+.dotted{
+    border-style: dotted;
+    color: black;
+    text-align: center;
+    border-color: tomato;
+}
+
+.dashed{
+    border-style: dashed;
+    color: blue;
+    text-align: center;
+    border-color: green;
+}
+
+.solid{
+    border-style: solid;
+    color: black;
+    text-align: center;
+    border-color: tomato;
+}
+
+.double{
+    border-style: double;
+    color: blue;
+    text-align: center;
+    border-color: green;
+}
+
+.groove{
+    border-style: groove;
+    color: black;
+    text-align: center;
+    border-color: tomato;
+}
+
+.ridge{
+    border-style: ridge;
+    color: blue;
+    text-align: center;
+    border-color: green;
+}
+
+.inset{
+    border-style: inset;
+    color: black;
+    text-align: center;
+    border-color: tomato;
+}
+
+.outset{
+    border-style: outset;
+    color: blue;
+    text-align: center;
+    border-color: green;
+}
+
+.none{
+    border-style: none;
+    color: black;
+    text-align: center;
+}
+
+.hidden{
+    border-style: hidden;
+    color: blue;
+    text-align: center;
+    
+}
+.TBLR{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 20px;
+    color: tomato;
+    border-color: blue orange green red;
+    height: 20px;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+
+
+}
