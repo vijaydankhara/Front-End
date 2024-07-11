@@ -51,3 +51,7 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+// Object Style get Method [style module ]
+
+// https://stackoverflow.com/questions/51498816/how-to-conditionally-apply-styles-in-a-react-component-with-css-modules
