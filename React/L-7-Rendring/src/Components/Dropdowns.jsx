@@ -1,4 +1,5 @@
 import Dropdown from 'react-bootstrap/Dropdown';
+import Recips from './Recipi';
 
 const Dropdowns = () => {
   return (
@@ -8,8 +9,8 @@ const Dropdowns = () => {
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Tea</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Coffee</Dropdown.Item>
+        <Dropdown.Item href="#/action-1"><button className='bg-green-700 text-white hover:bg-orange-500'>Tea</button></Dropdown.Item>
+        <Dropdown.Item href="#/action-2"><button className='bg-green-700 text-white hover:bg-orange-500'>Coffee</button></Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

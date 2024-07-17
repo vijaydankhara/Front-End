@@ -3,12 +3,12 @@ import React from 'react'
 /* Conditional Rendering */
 
 export function Item({check , name}){
-    // if(check){
-    //     return <li className='bg-yellow-300 text-white text-4xl text-center my-5 py-2 ml-52 rounded-b-full'>{name}</li>
-    // }
-    // return <li className='bg-pink-400 text-black text-4xl text-center py-2 rounded-t-full ml-52'><del>{name}</del></li>
+    if(check){
+        return <li className='bg-yellow-300 text-white text-4xl text-center my-5 py-2 ml-52 rounded-b-full'>{name}</li>
+    }
+    return <li className='bg-pink-400 text-black text-4xl text-center py-2 rounded-t-full ml-52'><del>{name}</del></li>
 
-    return check ? <li className='bg-pink-400 text-black te my-2 text-center py-2 rounded-full ml-52'>{name}</li> : null
+    // return check ? <li className='bg-pink-400 text-black te my-2 text-center py-2 rounded-full ml-52'>{name}</li> : null
 }
 
 const Conditional = () => {
