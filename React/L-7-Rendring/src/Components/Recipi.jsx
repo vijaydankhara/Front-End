@@ -11,7 +11,7 @@ export function Coffee() {
         How To Make Iced Coffee
       </h1>
 
-      <div className=" border-2 border-red-500 flex justify-between gap-5 bg-[#583417]">
+      <div className=" m-10 flex justify-between gap-5 bg-[#583417]">
         <div className="m-5">
           <h2 className="bg-yellow-300 px-5 py-2 rounded-full">Ingredients</h2>
           <ul className="my-5">
@@ -30,7 +30,7 @@ export function Coffee() {
         </div>
 
         <div className="m-5">
-          <h2 className="bg-yellow-300 p-2 rounded-full text-center">
+          <h2 className="bg-yellow-300 p-2 rounded-full text-center px-4">
             Directions
           </h2>
           <ul className="mt-5">
@@ -54,46 +54,47 @@ export function Coffee() {
 
 export function Tea() {
     return (
-      <div>
-        <h1 className="bg-[#ddac84] 
+      <div className="">
+        <h1 className="bg-[#67360e] 
         text-[#d2b094] rounded-full p-1 text-3xl m-5 text-center font font-bold font-serif">
-          How To Make Iced Coffee
+          How To Make Tea
         </h1>
   
-        <div className=" border-2 border-red-500 flex justify-between gap-5 bg-[#ddac84]">
+        <div className="m-10 flex justify-evenly   bg-[#ddac84]">
           <div className="m-5">
             <h2 className="bg-yellow-300 px-5 py-2 rounded-full">Ingredients</h2>
             <ul className="my-5">
-              <li className="my-3 text-[#d2b094] text-md">
-                3 tablespoons warm water
+              <li className="my-3 text-[#442d1a] text-md">
+              Indian Tea
               </li>
-              <li className="my-3 text-[#d2b094] text-md">
-                2 teaspoons instant coffee granules
+              <li className="my-3 text-[#442d1a]  text-md">
+                Sugar
               </li>
-              <li className="my-3 text-[#d2b094] text-md">1 teaspoon sugar</li>
-              <li className="my-3 text-[#d2b094] text-md">1 cup ice, or as needed</li>
-              <li className="my-3 text-[#d2b094] text-md">
-                6 fluid ounces cold milk
-              </li>
+              <li className="my-3 text-[#442d1a]  text-md">Milk</li>
+              <li className="my-3 text-[#442d1a]  text-md">Ginger</li>
+              <li className="my-3 text-[#442d1a]  text-md">Tea Strainer</li>
+              <li className="my-3 text-[#442d1a]  text-md">Pot</li>
             </ul>
           </div>
   
           <div className="m-5">
-            <h2 className="bg-yellow-300 p-2 rounded-full text-center">
+            <h2 className="bg-yellow-300 p-2 px-5 rounded-full text-center">
               Directions
             </h2>
             <ul className="mt-5">
-              <li className="my-5 text-[#d2b094] text-md">
-                1. Gather all ingredients.
+              <li className="my-2 text-[#442d1a]  text-md">
+                1. Crush Ginger and Boil Water
               </li>
-              <li className="my-5 text-[#d2b094] text-md">
-                2. Combine warm water, instant coffee, and sugar in a sealable
-                jar. Seal and shake until foamy.
+              <li className="my-2 text-[#442d1a]  text-md">
+                2. Adding Sugar and Tea.
               </li>
-              <li className="my-5 text-[#d2b094] text-md">
-                3. Pour into a glass full of ice; add milk. Adjust to taste if
-                necessary.
+              <li className="my-2 text-[#442d1a]  text-md">
+                3. Afret 3-4 Min Adding Milk
               </li>
+              <li className="my-2 text-[#442d1a]  text-md">
+                4.  Pour and Enjoy
+              </li>
+
             </ul>
           </div>
         </div>
@@ -109,23 +110,23 @@ const Recips = () => {
   };
 
   return (
-    <div className=" grid grid-cols-2 bg-[#d2b094] p-10">
+    <div className=" grid grid-cols-2 bg-[#d2b094] p-10 ">
       <button
         className="bg-[#ddac84] text-center font font-bold"
         onClick={buttonClick}
       >
         <img src={coffee} alt="" className=" text-white text-3xl" />
-        Click To Recips and Hiden{" "}
+        <h1 className="text-[#45240a]">Click To Recips and Hiden</h1>{" "}
       </button>
       {showRecips && <Coffee />}
 
       {/* Tea */}
       <button
-        className="bg-[#45240a] text-center font font-bold"
+        className="bg-[#45240a] text-center font font-bold mt-5"
         onClick={buttonClick}
       >
         <img src={tea} alt="" className=" text-white text-3xl" />
-        Click To Recips and Hiden{" "}
+        <h1 className="text-[#ddac84]">Click To Recips and Hiden</h1>{" "}
       </button>
       {showRecips && <Tea />}
     </div>
