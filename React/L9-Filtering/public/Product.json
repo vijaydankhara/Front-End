@@ -1,0 +1,95 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "Chocolate Ice Cream",
+      "price": 549,
+      "discount": 12.96,
+      "brand": "Havmore",
+      "color": "Yellow",
+      "category": "Ice cream"
+    },
+    {
+      "id": 2,
+      "title": "Pishta Ice Cream",
+      "price": 399,
+      "discount": 30,
+      "brand": "Havmore",
+      "color": "Green",
+      "category": "Ice cream"
+    },
+    {
+      "id": 3,
+      "title": "Orange pista Ice Cream",
+      "price": 699,
+      "discount": 50,
+      "brand": "Amul",
+      "color": "Orange",
+      "category": "Ice cream"
+    },
+    {
+      "id": 4,
+      "title": "Chokobar Candy",
+      "price": 111,
+      "discount": 5,
+      "brand": "Amul",
+      "color": "Coffee",
+      "category": "Candy"
+    },
+    {
+      "id": 5,
+      "title": "Pista Kulfi",
+      "price": 150,
+      "discount": 20,
+      "brand": "Amul",
+      "color": "Yellow",
+      "category": "Kulfi"
+    },
+    {
+      "id": 6,
+      "title": "Almond-Pista Kulfi",
+      "price": 199,
+      "discount": 25,
+      "brand": "Havmor",
+      "color": "Green",
+      "category": "Kulfi"
+    },
+    {
+      "id": 7,
+      "title": "Chocolate Cold CoCo",
+      "price": 210,
+      "discount": 10,
+      "brand": "Amul",
+      "color": "Coffee",
+      "category": "CoCo"
+    },
+    {
+      "id": 8,
+      "title": "Chocolate Almond Cold CoCo ",
+      "price": 170,
+      "discount": 25,
+      "brand": "Havmor",
+      "color": "Coffee",
+      "category": "CoCo"
+    },
+    {
+      "id": 9,
+      "title": "Ice Cream Cone",
+      "price": 99,
+      "discount": 10,
+      "brand": "Amul",
+      "color": "Pink-Chocalate",
+      "category": "Cone"
+    },
+    {
+      "id": 10,
+      "title": "Ice Cream Cone Mix",
+      "price": 299,
+      "discount": 30,
+      "brand": "Havmor",
+      "color": "Chocolate",
+      "category": "Cone"
+    }
+      
+    ]
+  }
