@@ -27,7 +27,13 @@ const RenderingCategory = () => {
       productFilter.length > 0 ? productFilter : ["Data not found"]
     );
   };
-  
+
+  const filterByPrice = () => {
+    const productFilter = postData.filter((post) => post.price > 500);
+    setFilteredData(
+      productFilter.length > 0 ? productFilter : ["Data not found"]
+    );
+  };
 
   const buttonClickReset = () => {
     setFilteredData(["Data not found"]);
@@ -35,23 +41,29 @@ const RenderingCategory = () => {
   };
 
   return (
-    
     <div className="container mt-4">
-    <h1 className="text-center bg-primary text-white p-2">
+      <h1 className="text-center bg-primary text-white p-2">
         This is List-Rendering in React using filter() and map()
       </h1>
 
       {/* BUTTONS */}
-    <div className="flex flex-row text-center mt-4 gap-4">
+      <div className="flex flex-row text-center mt-4 gap-4">
         {/* Filter by  Category */}
         <Button
           className="bg-[#03851b] hover:bg-[#38a54c] rounded-full"
           variant="primary"
-          onClick={filterByCategory}>
+          onClick={filterByCategory}
+        >
           filterByCategory
         </Button>
 
-        
+        <Button
+          className="bg-[#03851b] hover:bg-[#38a54c] rounded-full"
+          variant="primary"
+          onClick={filterByPrice}
+        >
+          filterByCategory
+        </Button>
 
         {/* Reset Data Button */}
         <Button
@@ -62,7 +74,6 @@ const RenderingCategory = () => {
           RESET
         </Button>
       </div>
-
 
       <div className="row m-10 p-5 border-2 border-red-500 justify-items-start text-pretty ">
         {filteredData.map((item, id) =>
@@ -108,7 +119,6 @@ const RenderingCategory = () => {
           )
         )}
       </div>
-      
     </div>
   );
 };
