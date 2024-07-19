@@ -1,5 +1,5 @@
 {
-  "name": "l9-filtering",
+  "name": "l10-createcontext",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "lucide-react": "^0.408.0",
     "react": "^18.3.1",
-    "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
@@ -25,7 +22,6 @@
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
-    "json-loader": "^0.5.7",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.6",
     "vite": "^5.3.4"
