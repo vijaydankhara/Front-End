@@ -12,7 +12,7 @@ const CakeContainer = () => {
                 <img 
                     src="https://imgmediagumlet.lbb.in/media/2022/02/61f93800571b3d41eee88d0a_1643722752250.jpg?fm=webp&w=480&h=480&dpr=2" 
                     alt="Cake" 
-                    className="w-full h-48 object-cover"
+                    className="vijay"
                 />
                 <div className="p-4">
                     <h1 className="text-4xl mb-4">
