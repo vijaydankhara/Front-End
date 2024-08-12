@@ -17,11 +17,13 @@ const CakeContainer = () => {
     const dispatch = useDispatch()
 
   return (
-    <div className='flex  gap-x-9'>
+    <div className='  gap-x-9 bg-indigo-500'>
       <h1>NumOfCakes:{numOfCakes}</h1>
       <h1>NumOfChocos:{numOfChocos}</h1>
-      <button onClick={() => dispatch(buy_cake())}>Cake Decrement</button>
-      <button onClick={() => dispatch(buy_choco())}>Choco Decrement</button>
+     <div className='flex '>
+     <button className='bg-pink-400 ' onClick={() => dispatch(buy_cake())}>Cake Decrement</button>
+      <button className='bg-pink-400 ' onClick={() => dispatch(buy_choco())}>Choco Decrement</button>
+     </div>
     </div>
   )
 }
