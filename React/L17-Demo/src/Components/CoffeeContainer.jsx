@@ -27,7 +27,7 @@ const CoffeeContainer = () => {
                             Buy Coffee 
                         </button>
                     ) : (
-                        <p className="text-xl text-red-500">Not available Coffee</p>
+                        <p className="w-full text-center py-2 bottom-0 text-2xl bg-[#ff0000] text-[#fff] font-serif rounded-b-full">Out Of Stocks</p>
                     )}
                 </div>
             </div>
