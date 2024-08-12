@@ -13,7 +13,7 @@ const Reducer = (state = initialState , action) => {
             ...state,
             numOfCake:state.numOfCake - 1
         }
-        case BUY_CHOCO:return {
+        case BUY_CHOCO : return {
             ...state,
             numOfChoco:state.numOfChoco - 1
         }
