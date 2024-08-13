@@ -1,20 +1,15 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from "react";
 
-const CakeContainer = () => {
-  const numOfCakes = useSelector((state) => state.cake.numOfCakes);
-  const dispatch = useDispatch();
-
-  const handleAddToCart = () => {
-    dispatch({ type: 'ADD_TO_CART' });
-  };
-
+const Card = () => {
   return (
-    <div className="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
-      <a className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
+    <div className="relative m-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg- shadow-md">
+      <a
+        className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl"
+        href="#"
+      >
         <img
-          className="object-cover"
-          src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c25lYWtlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          className="object-cover h-72 w-72"
+          src="https://theobroma.in/cdn/shop/files/RedVelvetCakehalfkg.jpg?v=1711125747"
           alt="product"
         />
         <span className="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">
@@ -24,13 +19,13 @@ const CakeContainer = () => {
       <div className="mt-4 px-5 pb-5">
         <a href="#">
           <h5 className="text-xl tracking-tight text-slate-900">
-            Nike Air MX Super 2500 - Red
+          Heart Red Velvet Cake
           </h5>
         </a>
         <div className="mt-2 mb-5 flex items-center justify-between">
           <p>
             <span className="text-3xl font-bold text-slate-900">$449</span>
-            <span className="text-sm text-slate-900 line-through">$699</span>
+            <span className="text-sm text-slate-900 line-through">$899</span>
           </p>
           <div className="flex items-center">
             {[...Array(5)].map((_, index) => (
@@ -50,10 +45,10 @@ const CakeContainer = () => {
             </span>
           </div>
         </div>
+
         <a
-          onClick={handleAddToCart}
           href="#"
-          className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
+          className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-[#3765fd] duration-1000"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -71,10 +66,9 @@ const CakeContainer = () => {
           </svg>
           Add to cart
         </a>
-        <p className="text-center mt-4">Cakes available: {numOfCakes}</p>
       </div>
     </div>
   );
 };
 
-export default CakeContainer;
+export default Card;
