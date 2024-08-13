@@ -1,10 +1,10 @@
-import React from 'react'
-
-import { combineReducers } from 'redux'
+import { combineReducers } from 'redux';
+import CakeReducer from './CakeReducer';
+import ChocoReducer from './ChocoReducer';
 
 const rootReducer = combineReducers({
-    CakeReducer,
-    ChocoReducer
-})
+  cake: CakeReducer,
+  choco: ChocoReducer,
+});
 
-export default rootReducer
+export default rootReducer;

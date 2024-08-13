@@ -3,6 +3,7 @@ import {PRODUCT_ADD,PRODUCT_UPDATE,PRODUCT_DELETE,PRODUCT_ADD_SHOP, ADD_TO_CART,
 
 const initialState = {
     numOfCake:12,
+    numOfChoco: 20,
     cart: [],
     wishlist: [],
    
@@ -26,10 +27,16 @@ const Reducer = (state = initialState , action) => {
             ...state,
             numOfChoco:state.numOfChoco + 1
         }
-        case ADD_TO_CART : return {
-            ...state,
-            numOfChoco:state.numOfChoco - 1
-        }
+        case ADD_TO_CART :
+      return {
+        ...state,
+        numOfChoco: state.numOfChoco - 1,
+      }
+      case ADD_TO_CART:
+      return {
+        ...state,
+        numOfCakes: state.numOfCakes - 1,
+      }                 
         case REMOVE_TO_CART: return {
             ...state,
             numOfChoco:state.numOfChoco - 1

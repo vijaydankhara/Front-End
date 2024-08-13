@@ -1,19 +1,6 @@
-// import { ADD_TO_CART, ADD_TO_WISHLIST, CART_TO_WISHLIST, DECREMENT, EMPTY_CART, EMPTY_WISHLIST, INCREMENT, PRODUCT_ADD, PRODUCT_ADD_SHOP, PRODUCT_DELETE, PRODUCT_UPDATE, REMOVE_TO_CART, REMOVE_TO_WISHLIST, WISHLIST_TO_CART } from "./Constant";
+import { ADD_TO_CART, ADD_TO_WISHLIST,PRODUCT_LIST, CART_TO_WISHLIST, DECREMENT, EMPTY_CART, EMPTY_WISHLIST, INCREMENT, PRODUCT_ADD, PRODUCT_ADD_SHOP, PRODUCT_DELETE, PRODUCT_UPDATE, REMOVE_TO_CART, REMOVE_TO_WISHLIST, WISHLIST_TO_CART } from "./Constant";
 
-import { PRODUCT_ADD } from "./Constant"
-import { PRODUCT_UPDATE } from "./Constant"
-import { PRODUCT_DELETE } from "./Constant"
-import { ADD_TO_CART } from "./Constant"
-import { PRODUCT_ADD_SHOP } from "./Constant"
-import { REMOVE_TO_CART } from "./Constant"
-import { EMPTY_CART } from "./Constant"
-import { ADD_TO_WISHLIST } from "./Constant"
-import { REMOVE_TO_WISHLIST } from "./Constant"
-import { EMPTY_WISHLIST } from "./Constant"
-import { WISHLIST_TO_CART } from "./Constant"
-import { CART_TO_WISHLIST } from "./Constant"
-import { INCREMENT } from "./Constant"
-import { DECREMENT } from "./Constant"
+
 
 export const product_add = () => {
     return{
@@ -28,6 +15,11 @@ export const product_update = () => {
 export const product_delete = () => {
     return{
         type:PRODUCT_DELETE
+    }
+}
+export const product_list = () => {
+    return{
+        type:PRODUCT_LIST
     }
 }
 
