@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Weblogo from "../assets/vd.png";
+import VdLogo from "../assets/vd.png";
 import { NavLink, Outlet } from "react-router-dom";
-import { FaGripVertical, FaHeart, FaShoppingCart } from "react-icons/fa";
+import {FaHeart, FaShoppingCart } from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -13,15 +13,15 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-[#ffffff] w-full h-28 flex justify-around items-center z-50 sticky top-0">
+      <div className="Dankhara w-full h-28 flex justify-around items-center z-50 sticky top-0">
         <div className="container">
           <div className="flex items-center justify-between ml-5">
             
             <NavLink to="/" className="flex items-center rtl:space-x-reverse">
               <img
                 id="logo"
-                className="size-24 "
-                src={Weblogo}
+                className="size-16   "
+                src={VdLogo}
                 alt="Not Found"
               />
             </NavLink>
@@ -181,10 +181,10 @@ const Navbar = () => {
             </div>
             <div className="flex items-center space-x-4">
               <NavLink to="/cart">
-                <FaShoppingCart className="text-2xl text-gray-950 mr-5" />
+                <FaShoppingCart className="text-2xl text-gray-950 hover:text-[#ff0000] mr-5" />
               </NavLink>
               <NavLink to="/wishlist">
-                <FaHeart className="text-2xl text-gray-950 mr-5" />
+                <FaHeart className="text-2xl text-gray-950 hover:text-[#ff0000] mr-5" />
               </NavLink>
             </div>
           </div>
