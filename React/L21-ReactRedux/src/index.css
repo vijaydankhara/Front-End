@@ -4,7 +4,7 @@
 
 @layer components{
   .btn{
-    @apply bg-purple-700 text-white ms-4 p-4
+    @apply bg-orange-600 rounded-full font-serif text-white ms-4 p-4
   }
 }
   
