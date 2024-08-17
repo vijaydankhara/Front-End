@@ -14,11 +14,11 @@
         },
         {
             "id": 2,
-            "title": "Darkest Chocolate",
+            "title": "Blackout Chocolate Cake",
             "price": 813.00,
             "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "category": "Canned Ice Cream",
-            "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2019/04/product-14-5.webp",
+            "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-3-4.webp",
             "rating": {
                 "rate": 4.7,
                 "count": 250
@@ -26,11 +26,11 @@
         },
         {
             "id": 3,
-            "title": "Darkest Chocolate",
+            "title": "Snow Cone Sorbet",
             "price": 113.00,
             "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "category": "Canned Ice Cream",
-            "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2019/04/product-14-5.webp",
+            "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-7-4.webp",
             "rating": {
                 "rate": 4.7,
                 "count": 250
@@ -38,11 +38,11 @@
         },
         {
             "id": 4,
-            "title": "Darkest Chocolate",
+            "title": "Brambleberry Crisp",
             "price": 123.00,
             "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "category": "Canned Ice Cream",
-            "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2019/04/product-14-5.webp",
+            "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2022/08/product-20.webp",
             "rating": {
                 "rate": 4.7,
                 "count": 250
@@ -50,11 +50,23 @@
         },
         {
             "id": 5,
-            "title": "Darkest Chocolate",
+            "title": "Frosé Sorbet",
             "price": 133.00,
             "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
             "category": "Canned Ice Cream",
-            "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2019/04/product-14-5.webp",
+            "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-16-5.webp",
+            "rating": {
+                "rate": 4.7,
+                "count": 250
+            }
+        },
+        {
+            "id": 6,
+            "title": "Green Mint Chip",
+            "price": 143.00,
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "category": "Canned Ice Cream",
+            "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-21-4.webp",
             "rating": {
                 "rate": 4.7,
                 "count": 250
