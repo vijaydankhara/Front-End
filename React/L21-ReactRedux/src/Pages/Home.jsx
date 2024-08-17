@@ -17,11 +17,26 @@ const Home = () => {
   }
 
   return (
-    <div>
+    <div className=''>
       <h1>This is Home Page</h1>
-      <button className='btn' onClick={() => dispatch(add_cart(product))}>addToCart</button>
-      <button className='btn' onClick={() => dispatch(remove_cart(product))}>removeToCart</button>
-      <button className='btn' onClick={() => dispatch(empty_cart())}>emptyCart</button>
+      
+<div className="flex flex-col gap-y-5">
+  
+<div className='flex '>
+    <button className='btn1' onClick={() => dispatch(add_cart(product))}>Add To Cart</button>
+      <button className='btn1' onClick={() => dispatch(remove_cart(product))}>Remove To Cart</button>
+      <button className='btn1' onClick={() => dispatch(empty_cart())}>Empty Cart</button>
+    </div>
+
+    <div className='flex '>
+    <button className='btn2' onClick={() => dispatch(add_cart(product))}>Add To Wishlist</button>
+      <button className='btn2' onClick={() => dispatch(remove_cart(product))}>Remove To Wishlist</button>
+      <button className='btn2' onClick={() => dispatch(empty_cart())}>Empty Wishlist</button>
+    </div>
+
+  
+</div>
+
     </div>
   )
 }
