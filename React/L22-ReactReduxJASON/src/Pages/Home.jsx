@@ -34,13 +34,13 @@ const Home = () => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
-          return response.json(); // Parse JSON from response
+          return response.json();
         })
         .then(data => {
-          resolve(data); // Resolve the promise with the parsed data
+          resolve(data);
         })
         .catch(error => {
-          reject(error); // Reject the promise if there's an error
+          reject(error); 
         
         });
     });
@@ -50,7 +50,7 @@ const Home = () => {
   useEffect(() => {
     fetchData()
       .then(ecodata => {
-        setProducts(ecodata); // Save the fetched data to state
+        setProducts(ecodata); 
         // console.log('Fetched Data:', ecodata);
       })
       .catch(error => {
