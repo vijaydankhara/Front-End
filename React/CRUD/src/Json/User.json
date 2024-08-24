@@ -1,0 +1,204 @@
+{
+  "usersJsonData": [
+    {
+      "id": 1,
+      "firstName": "Karn",
+      "lastName": "Yong",
+      "email": "karn.yong@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=1",
+      "Gender": "Female",
+      "age": 25,
+      "location": "America"
+    },
+    {
+      "id": 2,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=2",
+      "Gender": "Male",
+      "age": 30,
+      "location": "Canada"
+    },
+    {
+      "id": 3,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=3",
+      "Gender": "Female",
+      "age": 28,
+      "location": "Australia"
+    },
+    {
+      "id": 4,
+      "firstName": "Michael",
+      "lastName": "Johnson",
+      "email": "michael.johnson@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=4",
+      "Gender": "Male",
+      "age": 35,
+      "location": "United Kingdom"
+    },
+    {
+      "id": 5,
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "email": "emily.davis@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=5",
+      "Gender": "Female",
+      "age": 22,
+      "location": "New Zealand"
+    },
+    {
+      "id": 6,
+      "firstName": "Robert",
+      "lastName": "Wilson",
+      "email": "robert.wilson@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=6",
+      "Gender": "Male",
+      "age": 40,
+      "location": "Ireland"
+    },
+    {
+      "id": 7,
+      "firstName": "Laura",
+      "lastName": "Brown",
+      "email": "laura.brown@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=7",
+      "Gender": "Female",
+      "age": 29,
+      "location": "South Africa"
+    },
+    {
+      "id": 8,
+      "firstName": "David",
+      "lastName": "Taylor",
+      "email": "david.taylor@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=8",
+      "Gender": "Male",
+      "age": 33,
+      "location": "India"
+    },
+    {
+      "id": 9,
+      "firstName": "Sophia",
+      "lastName": "Martinez",
+      "email": "sophia.martinez@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=9",
+      "Gender": "Female",
+      "age": 27,
+      "location": "Mexico"
+    },
+    {
+      "id": 10,
+      "firstName": "James",
+      "lastName": "Anderson",
+      "email": "james.anderson@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=10",
+      "Gender": "Male",
+      "age": 31,
+      "location": "Brazil"
+    },
+    {
+      "id": 11,
+      "firstName": "Olivia",
+      "lastName": "Garcia",
+      "email": "olivia.garcia@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=11",
+      "Gender": "Female",
+      "age": 26,
+      "location": "Spain"
+    },
+    {
+      "id": 12,
+      "firstName": "Liam",
+      "lastName": "Miller",
+      "email": "liam.miller@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=12",
+      "Gender": "Male",
+      "age": 34,
+      "location": "France"
+    },
+    {
+      "id": 13,
+      "firstName": "Emma",
+      "lastName": "Wilson",
+      "email": "emma.wilson@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=13",
+      "Gender": "Female",
+      "age": 23,
+      "location": "Germany"
+    },
+    {
+      "id": 14,
+      "firstName": "Noah",
+      "lastName": "Moore",
+      "email": "noah.moore@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=14",
+      "Gender": "Male",
+      "age": 29,
+      "location": "Italy"
+    },
+    {
+      "id": 15,
+      "firstName": "Ava",
+      "lastName": "Clark",
+      "email": "ava.clark@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=15",
+      "Gender": "Female",
+      "age": 24,
+      "location": "Sweden"
+    },
+    {
+      "id": 16,
+      "firstName": "William",
+      "lastName": "Lopez",
+      "email": "william.lopez@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=16",
+      "Gender": "Male",
+      "age": 32,
+      "location": "Argentina"
+    },
+    {
+      "id": 17,
+      "firstName": "Isabella",
+      "lastName": "Harris",
+      "email": "isabella.harris@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=17",
+      "Gender": "Female",
+      "age": 30,
+      "location": "Portugal"
+    },
+    {
+      "id": 18,
+      "firstName": "Henry",
+      "lastName": "Walker",
+      "email": "henry.walker@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=18",
+      "Gender": "Male",
+      "age": 28,
+      "location": "Japan"
+    },
+    {
+      "id": 19,
+      "firstName": "Mia",
+      "lastName": "King",
+      "email": "mia.king@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=19",
+      "Gender": "Female",
+      "age": 21,
+      "location": "China"
+    },
+    {
+      "id": 20,
+      "firstName": "Alexander",
+      "lastName": "Scott",
+      "email": "alexander.scott@mecallapi.com",
+      "Image": "https://i.pravatar.cc/150?u=20",
+      "Gender": "Male",
+      "age": 27,
+      "location": "Russia"
+    }
+  ]
+}

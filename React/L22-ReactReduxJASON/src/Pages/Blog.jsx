@@ -50,11 +50,11 @@ const Blog = () => {
                 <h2 className="text-2xl bg-black text-white text-center p-2 rounded-full font-serif font-semibold">
                   {item.title}
                 </h2>
-                <h3 className="text-lg mt-2 font-semibold">Price: ${item.price}</h3>
-                <p className="mt-2 text-gray-950">Description: {item.description}</p>
-                <p className="mt-2 text-gray-950">Category: {item.category}</p>
-                <p className="mt-2 text-gray-950">Rate: {item.rating.rate}</p>
-                <p className="mt-2 text-gray-950">Count: {item.rating.count}</p>
+                <h3 className="text-lg mt-2 font-semibold">Price:- ${item.price}</h3>
+                <p className="mt-2 text-gray-950">Description:- {item.description}</p>
+                <p className="mt-2 text-gray-950">Category:- {item.category}</p>
+                <p className="mt-2 text-gray-950">Rate:- {item.rating.rate}</p>
+                <p className="mt-2 text-gray-950">Count:- {item.rating.count}</p>
                 
                 <button
                   className="bg-blue-500 text-white py-2 px-4 rounded mt-4 mr-2"
