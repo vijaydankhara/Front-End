@@ -1,22 +1,13 @@
-import { useState } from "react";
-import CustomTable from "./Components/CustomTable";
-import Cricket from "./Components/Cricket";
-import "./App.css";
-import { Navbar } from "./Components/Navbar";
-
-
+import React from 'react'
+import Layout from './pages/Layout'
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-    <Navbar/>
-      {/* <CustomTable/> */}
-      <Cricket />
-      
+    <Layout />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

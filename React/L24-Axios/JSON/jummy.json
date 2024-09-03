@@ -1,0 +1,84 @@
+{
+  "JummyIceCreem": [
+    {
+      "id": "2",
+      "title": "Blackout Chocolate Cake",
+      "price": 813,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-3-4.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": "3",
+      "title": "Snow Cone Sorbet",
+      "price": 113,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-7-4.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": "4",
+      "title": "Brambleberry Crisp",
+      "price": 123,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2022/08/product-20.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": "5",
+      "title": "Frosé Sorbet",
+      "price": 133,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-16-5.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": "6",
+      "title": "Green Mint Chip",
+      "price": 143,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-21-4.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": "9a59",
+      "fname": "vijay",
+      "lname": "dankhara"
+    },
+    {
+      "id": "567b",
+      "fname": "Vijay",
+      "lname": "Dankhara"
+    },
+    {
+      "id": "0b3f",
+      "fname": "Vijay",
+      "lname": "Dankhara"
+    },
+    {
+      "id": "78a6",
+      "fname": "Vijay",
+      "lname": "Dankhara"
+    }
+  ]
+}
