@@ -1,93 +1,131 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
-const people = [
-  {
-    id: 1,
-    name: 'John Doe',
-    title: 'Front-end Developer',
-    department: 'Engineering',
-    email: 'john@devui.com',
-    phoneNo: '123-456-7890',
-    age: 28,
-    role: 'Developer',
-    image: 'https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80',
-  },
-  {
-    id: 2,
-    name: 'Jane Doe',
-    title: 'Back-end Developer',
-    department: 'Engineering',
-    email: 'jane@devui.com',
-    phoneNo: '098-765-4321',
-    age: 30,
-    role: 'CTO',
-    image: 'https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
-  },
-]
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const Home = () => {
+  const [students, setStudents] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const studentsPerPage = 5; 
+
+  useEffect(() => {
+    fetchStudents();
+  }, []);
+
+  const fetchStudents = async () => {
+    try {
+      const response = await axios.get("http://localhost:3000/users");
+      setStudents(response.data);
+    } catch (error) {
+      console.error("There was an error fetching the students!", error);
+    }
+  };
+
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`http://localhost:3000/users/${id}`);
+      fetchStudents(); 
+    } catch (error) {
+      console.error("There was an error deleting the student!", error);
+    }
+  };
+
+
+  const indexOfLastStudent = currentPage * studentsPerPage;
+  const indexOfFirstStudent = indexOfLastStudent - studentsPerPage;
+  const currentStudents = students.slice(indexOfFirstStudent, indexOfLastStudent);
+
+
+  const totalPages = Math.ceil(students.length / studentsPerPage);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <>
-      <section className="container mx-auto px-4 py-4">
+      <section className="mx-auto w-full max-w-7xl px-4 py-4">
         <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
           <div>
             <h2 className="text-lg font-semibold">Students</h2>
             <p className="mt-1 text-sm text-gray-700">
-              This is a list of all Students. You can add new Students, edit or delete existing ones.
+              This is a list of all students. You can add new students, edit, or delete existing ones.
             </p>
           </div>
           <div>
-            <button
-              type="button"
+            <Link
+              to="/add"
               className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
             >
-              Add new Students
-            </button>
+              Add new Student
+            </Link>
           </div>
         </div>
-
         <div className="mt-6 flex flex-col">
-          <div className="overflow-x-auto">
+          <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
               <div className="overflow-hidden border border-gray-200 md:rounded-lg">
                 <table className="min-w-full divide-y divide-gray-200">
-                  <thead className="bg-gray-50 ">
-                    <tr>
-                      <th className="px-4 py-3.5 text-left text-sm font-bold text-gray-700">Id</th>
-                      <th className="px-4 py-3.5 text-left text-sm font-bold text-gray-700">Students</th>
-                      <th className="px-12 py-3.5 text-left text-sm font-bold text-gray-700">Email</th>
-                      <th className="px-4 py-3.5 text-left text-sm font-bold text-gray-700">PhoneNo</th>
-                      <th className="px-4 py-3.5 text-left text-sm font-bold text-gray-700">Age</th>
-                      <th className="px-4 py-3.5 text-left text-sm font-bold text-gray-700">Role</th>
-                      <th className="px-4 py-3.5 text-left text-sm font-bold text-gray-700">Edit Students</th>
-                      <th className="px-4 py-3.5 text-left text-sm font-bold text-gray-700">Remove Students</th>
+                  <thead className="bg-gray-50">
+                    <tr >
+                      <th scope="col" className="px-4 py-3.5 text-left text-sm  font-semibold text-gray-700">
+                        Students
+                      </th>
+                      <th scope="col" className="px-12 py-3.5 text-left text-sm font-semibold text-gray-700">
+                        Email
+                      </th>
+                      <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-700">
+                        PhoneNo
+                      </th>
+                      <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-700">
+                        Age
+                      </th>
+                      <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-700">
+                        Edit Student
+                      </th>
+                      <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-700">
+                        Remove Student
+                      </th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 bg-white">
-                    {people.map((person) => (
-                      <tr key={person.id}>
-                        <td className="whitespace-nowrap px-4 py-4">{person.id}</td>
+                    {currentStudents.map((student) => (
+                      <tr key={student.id}>
                         <td className="whitespace-nowrap px-4 py-4">
                           <div className="flex items-center">
                             <div className="h-10 w-10 flex-shrink-0">
-                              <img className="h-10 w-10 rounded-full object-cover" src={person.image} alt="" />
+                              <img
+                                className="h-10 w-10 rounded-full object-cover"
+                                src={student.image}
+                                alt={student.fullname}
+                              />
                             </div>
                             <div className="ml-4">
-                              <div className="text-sm font-medium text-gray-900">{person.name}</div>
-                              <div className="text-sm text-gray-700">{person.title}</div>
+                              <div className="text-sm font-medium text-gray-900">
+                                {student.fullname}
+                              </div>
+                              
                             </div>
                           </div>
                         </td>
-                        <td className="whitespace-nowrap px-12 py-4">{person.email}</td>
-                        <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">{person.phoneNo}</td>
-                        <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">{person.age}</td>
-                        <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">{person.role}</td>
-                        <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
-                          <a href="#" className="text-gray-700">Edit</a>
+                        <td className="whitespace-nowrap px-12 py-4">
+                          <div className="text-sm text-gray-900 ">{student.email}</div>
+                        </td>
+                        <td className="whitespace-nowrap px-4 py-4">
+                          <span className="text-sm text-gray-700">{student.phone}</span>
+                        </td>
+                        <td className="whitespace-nowrap px-4 py-4 text-sm text-gray-700">
+                          {student.age}
                         </td>
                         <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
-                          <a href="#" className="text-gray-700">Remove</a>
+                          <Link to={`/edit/${student.id}`} className="text-blue-600 hover:text-blue-900">
+                            Edit
+                          </Link>
+                        </td>
+                        <td className="whitespace-nowrap px-4 py-4 text-center text-sm font-medium">
+                          <button
+                            onClick={() => handleDelete(student.id)}
+                            className="text-red-600 hover:text-red-900 "
+                          >
+                            Remove
+                          </button>
                         </td>
                       </tr>
                     ))}
@@ -97,24 +135,37 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex items-center justify-center pt-6">
-          <a href="#" className="mx-1 cursor-not-allowed text-sm font-semibold text-gray-900">
-            <span className="hidden lg:block">&larr; Previous</span>
-            <span className="block lg:hidden">&larr;</span>
-          </a>
-          <a href="#" className="mx-1 flex items-center rounded-md border border-gray-400 px-3 py-1 text-gray-900 hover:scale-105">1</a>
-          <a href="#" className="mx-1 flex items-center rounded-md border border-gray-400 px-3 py-1 text-gray-900 hover:scale-105">2</a>
-          <a href="#" className="mx-1 flex items-center rounded-md border border-gray-400 px-3 py-1 text-gray-900 hover:scale-105">3</a>
-          <a href="#" className="mx-1 flex items-center rounded-md border border-gray-400 px-3 py-1 text-gray-900 hover:scale-105">4</a>
-          <a href="#" className="mx-2 text-sm font-semibold text-gray-900">
-            <span className="hidden lg:block">Next &rarr;</span>
-            <span className="block lg:hidden">&rarr;</span>
-          </a>
+        {/* Pagination Controls */}
+        <div className="flex items-center justify-center pt-6 gap-x-5">
+          <button
+            onClick={() => paginate(currentPage - 1)}
+            disabled={currentPage === 1}
+            className="mx-1 text-sm font-semibold text-gray-900 disabled:opacity-50"
+          >
+            &larr; Previous
+          </button>
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index + 1}
+              onClick={() => paginate(index + 1)}
+              className={`mx-1 flex items-center rounded-md border px-3 py-1 text-gray-900 hover:scale-105 ${
+                currentPage === index + 1 ? "bg-gray-300" : ""
+              }`}
+            >
+              {index + 1}
+            </button>
+          ))}
+          <button
+            onClick={() => paginate(currentPage + 1)}
+            disabled={currentPage === totalPages}
+            className="mx-1 text-sm font-semibold text-gray-900 disabled:opacity-50"
+          >
+            Next &rarr;
+          </button>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
