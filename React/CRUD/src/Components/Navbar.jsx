@@ -29,9 +29,9 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="relative w-full">
+            <div className="relative w-full bg-[#fbce9a] ">
                 <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
-                    <div className="inline-flex items-center space-x-2">
+                    <div className="inline-flex items-center space-x-2 ">
                         <span>
                             <svg
                                 width="30"
@@ -46,15 +46,15 @@ const Navbar = () => {
                                 />
                             </svg>
                         </span>
-                        <span className="font-bold">DevUI</span>
+                        <span className="font-bold">VijayUI</span>
                     </div>
-                    <div className="hidden grow items-start lg:flex justify-center">
-                        <ul className="ml-12 inline-flex space-x-8">
+                    <div className="hidden grow items-start lg:flex justify-center ">
+                        <ul className="ml-12 inline-flex space-x-8 ">
                             {menuItems.map((item) => (
                                 <li key={item.name}>
                                     <Link
                                         to={item.to}
-                                        className="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900"
+                                        className="inline-flex items-center text-sm font-semibold  hover:text-gray-900"
                                     >
                                         {item.name}
                                         {/* <span>
@@ -65,11 +65,11 @@ const Navbar = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="hidden space-x-2 lg:block">
+                    <div className="hidden space-x-2 lg:block ">
                         <Link to="/profile">
                             <button
                                 type="button"
-                                className="rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                                className="rounded-md border border-black  bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                             >
                                 Profile
                             </button>
@@ -106,7 +106,7 @@ const Navbar = () => {
                                                     />
                                                 </svg>
                                             </span>
-                                            <span className="font-bold">DevUI</span>
+                                            <span className="font-bold">VijayUI</span>
                                         </div>
                                         <div className="-mr-2">
                                             <button
