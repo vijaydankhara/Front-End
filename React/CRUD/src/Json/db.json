@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullname": "krish patel",
+      "email": "krish111@gmail.com",
+      "phone": "8877665555",
+      "age": "63",
+      "image": ""
+    },
+    {
+      "id": "2",
+      "fullname": "sdfds",
+      "email": "krish111@gmail.com",
+      "phone": "34255445454",
+      "age": "44",
+      "image": ""
+    },
+    {
+      "id": "3",
+      "fullname": "abc",
+      "email": "abc2@gmail.com",
+      "phone": "22222222",
+      "age": "11",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "fullname": "Vijay Dankhara",
+      "email": "abc2@gmail.com",
+      "phone": "8877665555",
+      "age": "22",
+      "image": ""
+    }
+  ]
+}

@@ -15,7 +15,7 @@ const ADD = () => {
     image: ''
   });
 
-  // Load the last student ID from localStorage on mount
+
   useEffect(() => {
     const lastId = localStorage.getItem('lastStudentId');
     if (lastId) {
@@ -32,7 +32,7 @@ const ADD = () => {
     });
   };
 
-  // Handle image input and convert it to Base64
+
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -44,7 +44,7 @@ const ADD = () => {
     }
   };
 
-  // Handle form submission
+ 
   const onSubmitStudent = (e) => {
     e.preventDefault();
     axios.post("http://localhost:3000/users", student)
@@ -62,7 +62,7 @@ const ADD = () => {
       <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
         <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md border-2 border-blue-700 rounded-3xl p-3 bg-white">
           <div className="mb-2 flex justify-center">
-            {/* Placeholder for SVG */}
+         
             <svg
               width="50"
               height="56"
