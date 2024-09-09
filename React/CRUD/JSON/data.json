@@ -1,0 +1,48 @@
+{
+  "student": [
+    {
+      "id": "1",
+      "firstname": "vijay",
+      "lastname": "dankhara",
+      "email": "vijaydankhara111@gmail.com",
+      "phone": "8866111214",
+      "age": "25",
+      "gender": "Male",
+      "location": "Surat",
+      "image": ""
+    },
+    {
+      "id": "2",
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "phone": "",
+      "age": "",
+      "gender": "",
+      "location": "",
+      "image": ""
+    },
+    {
+      "id": "3",
+      "firstname": "",
+      "lastname": "",
+      "email": "",
+      "phone": "",
+      "age": "",
+      "gender": "",
+      "location": "",
+      "image": ""
+    },
+    {
+      "id": "4",
+      "firstname": "vijay",
+      "lastname": "dankhara",
+      "email": "",
+      "phone": "",
+      "age": "",
+      "gender": "",
+      "location": "",
+      "image": ""
+    }
+  ]
+}
