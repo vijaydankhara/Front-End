@@ -95,6 +95,7 @@ const Add = () => {
                     placeholder="First Name"
                     id="firstname"
                     name='firstname'
+                    value={student.firstname}
                     onChange={(e) => setStudents({ ...student, firstname: e.target.value })}
                   ></input>
                 </div>
@@ -111,6 +112,7 @@ const Add = () => {
                     placeholder="Last Name"
                     id="lastname"
                     name='lastname'
+                    value={student.lastname}
                     onChange={(e) => setStudents({ ...student, lastname: e.target.value })}
                   ></input>
                 </div>
@@ -195,6 +197,7 @@ const Add = () => {
                     placeholder="Age"
                     id="age"
                     name='age'
+                    value={student.age}
                     onChange={(e) => setStudents({ ...student, age: e.target.value })}
                   ></input>
                 </div>

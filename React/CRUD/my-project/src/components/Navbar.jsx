@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="relative w-full">
                 <div className="mx-auto flex items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
                     {/* Logo */}
-                    <div className="inline-flex items-center space-x-2">
+                    <div className="inline-flex items-center space-x-2 text-gray-800 hover:text-[#353bb4] ">
                         <span>
                             <svg
                                 width="30"
@@ -36,7 +36,7 @@ const Navbar = () => {
                                 />
                             </svg>
                         </span>
-                        <span className="font-bold">VijayUI</span>
+                        <span className="font-bold ">VijayUI</span>
                     </div>
 
                     {/* Desktop Menu */}
@@ -46,7 +46,7 @@ const Navbar = () => {
                                 <li key={item.name}>
                                     <Link
                                         to={item.to}
-                                        className="inline-flex items-center text-sm font-semibold text-gray-800 hover:text-gray-900"
+                                        className="inline-flex items-center text-xl font-serif font-semibold text-gray-800 hover:text-[#f44c4c]"
                                     >
                                         {item.name}
                                     </Link>

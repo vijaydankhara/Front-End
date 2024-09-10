@@ -17,10 +17,10 @@ const Profile = () => {
   }, []);
 
   return (
-    <div className=''>
-    <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 py-10 container mx-auto">
+    <div className='container mx-auto px-4 py-10'>
+    <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {data.map((student, index) => (
-        <div key={index} className="max-w-md bg-white shadow-lg rounded-lg overflow-hidden">
+        <div key={index} className="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="bg-gray-200 h-40 flex justify-center items-center">
             {student.image ? (
               <img
@@ -35,11 +35,11 @@ const Profile = () => {
             )}
           </div>
           <div className="p-6">
-            <h2 className="text-xl font-semibold text-gray-800">{`${student.firstname} ${student.lastname}`}</h2>
-            <p className="text-gray-600 mt-2">Email: {student.email}</p>
-            <p className="text-gray-600 mt-2">Phone: {student.phone}</p>
-            <p className="text-gray-600 mt-2">Gender: {student.gender}</p>
-            <p className="text-gray-600 mt-2">Location: {student.location}</p>
+            <h2 className="text-lg md:text-xl  font-semibold text-gray-800">{`${student.firstname} ${student.lastname}`}</h2>
+            <p className="text-sm md:text-base text-gray-600 mt-2">Email: {student.email}</p>
+            <p className="text-sm md:text-base text-gray-600 mt-2">Phone: {student.phone}</p>
+            <p className="text-sm md:text-base text-gray-600 mt-2">Gender: {student.gender}</p>
+            <p className="text-sm md:text-base text-gray-600 mt-2">Location: {student.location}</p>
           </div>
         </div>
       ))}
