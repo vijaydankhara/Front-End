@@ -5,7 +5,7 @@
       "firstname": "vijay",
       "lastname": "dankhara",
       "email": "vijaydankhara111@gmail.com",
-      "phone": "8866111214",
+      "phone": "5556443322",
       "age": "25",
       "gender": "Male",
       "location": "Surat",
@@ -16,8 +16,8 @@
       "firstname": "virat",
       "lastname": "kohli",
       "email": "virat18@gmail.com",
-      "phone": "5546677788",
-      "age": "37",
+      "phone": "7788779999",
+      "age": "38",
       "gender": "Male",
       "location": "Delhi",
       "image": ""
@@ -27,21 +27,10 @@
       "firstname": "rohit",
       "lastname": "sharma",
       "email": "rohit45@gmail.com",
-      "phone": "8899889900",
+      "phone": "9988776655",
       "age": "39",
       "gender": "Male",
       "location": "Delhi",
-      "image": ""
-    },
-    {
-      "id": "4",
-      "firstname": "mithali",
-      "lastname": "raj",
-      "email": "mithali12@gmail.com",
-      "phone": "6655990000",
-      "age": "33",
-      "gender": "Female",
-      "location": "Mumbai",
       "image": ""
     }
   ]

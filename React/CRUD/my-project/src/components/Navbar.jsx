@@ -21,6 +21,7 @@ const Navbar = () => {
             <div className="relative w-full">
                 <div className="mx-auto flex items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
                     {/* Logo */}
+                    <Link to="/">
                     <div className="inline-flex items-center space-x-2 text-gray-800 hover:text-[#353bb4] ">
                         <span>
                             <svg
@@ -38,6 +39,7 @@ const Navbar = () => {
                         </span>
                         <span className="font-bold ">VijayUI</span>
                     </div>
+                    </Link>
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex grow items-start justify-center">

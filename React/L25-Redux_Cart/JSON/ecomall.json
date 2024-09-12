@@ -1,0 +1,292 @@
+{
+  "ecoproduct": [
+    {
+      "id": 1,
+      "title": "Darkest Chocolate",
+      "price": 13,
+      "description": "A rich, decadent chocolate ice cream.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2019/04/product-14-5.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": 2,
+      "title": "Blackout Chocolate Cake",
+      "price": 813,
+      "description": "Dense chocolate cake ice cream with fudge swirls.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-3-4.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": 3,
+      "title": "Snow Cone Sorbet",
+      "price": 113,
+      "description": "A refreshing sorbet with fruity flavors.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-7-4.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": 4,
+      "title": "Brambleberry Crisp",
+      "price": 123,
+      "description": "Crispy fruit flavor packed in creamy delight.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2022/08/product-20.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": 5,
+      "title": "Frosé Sorbet",
+      "price": 133,
+      "description": "A frozen rosé wine-inspired sorbet.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-16-5.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": 6,
+      "title": "Green Mint Chip",
+      "price": 143,
+      "description": "Mint ice cream with dark chocolate chips.",
+      "category": "Canned Ice Cream",
+      "image": "https://wpbingosite.com/wordpress/jumys/wp-content/uploads/2020/12/product-21-4.webp",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": 7,
+      "title": "Classic Vanilla Bean",
+      "price": 45,
+      "description": "Smooth and creamy vanilla bean ice cream.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Vanilla+Bean",
+      "rating": {
+        "rate": 4.8,
+        "count": 350
+      }
+    },
+    {
+      "id": 8,
+      "title": "Strawberry Swirl",
+      "price": 55,
+      "description": "Sweet strawberry ice cream with a swirl of jam.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Strawberry+Swirl",
+      "rating": {
+        "rate": 4.6,
+        "count": 220
+      }
+    },
+    {
+      "id": 9,
+      "title": "Salted Caramel Bliss",
+      "price": 65,
+      "description": "Rich caramel with a hint of sea salt.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Salted+Caramel",
+      "rating": {
+        "rate": 4.9,
+        "count": 410
+      }
+    },
+    {
+      "id": 10,
+      "title": "Mango Tango Sorbet",
+      "price": 73,
+      "description": "Exotic mango sorbet with a tropical kick.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Mango+Tango",
+      "rating": {
+        "rate": 4.5,
+        "count": 180
+      }
+    },
+    {
+      "id": 11,
+      "title": "Cookies 'n Cream",
+      "price": 85,
+      "description": "Classic cookies blended into creamy vanilla.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Cookies+'n+Cream",
+      "rating": {
+        "rate": 4.9,
+        "count": 390
+      }
+    },
+    {
+      "id": 12,
+      "title": "Rocky Road Madness",
+      "price": 90,
+      "description": "A mix of marshmallows, almonds, and rich chocolate.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Rocky+Road",
+      "rating": {
+        "rate": 4.7,
+        "count": 320
+      }
+    },
+    {
+      "id": 13,
+      "title": "Peanut Butter Ripple",
+      "price": 98,
+      "description": "Creamy peanut butter rippled through vanilla ice cream.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Peanut+Butter",
+      "rating": {
+        "rate": 4.8,
+        "count": 275
+      }
+    },
+    {
+      "id": 14,
+      "title": "Pistachio Perfection",
+      "price": 105,
+      "description": "Smooth pistachio-flavored ice cream with a nutty crunch.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Pistachio",
+      "rating": {
+        "rate": 4.9,
+        "count": 315
+      }
+    },
+    {
+      "id": 15,
+      "title": "Berry Blast Sorbet",
+      "price": 76,
+      "description": "A mix of berries in a tangy sorbet.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Berry+Blast",
+      "rating": {
+        "rate": 4.7,
+        "count": 210
+      }
+    },
+    {
+      "id": 16,
+      "title": "S'mores Delight",
+      "price": 115,
+      "description": "Chocolate, marshmallows, and graham cracker pieces in ice cream.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=S'mores+Delight",
+      "rating": {
+        "rate": 4.9,
+        "count": 450
+      }
+    },
+    {
+      "id": 17,
+      "title": "Toffee Crunch",
+      "price": 120,
+      "description": "Crunchy toffee pieces blended into vanilla ice cream.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Toffee+Crunch",
+      "rating": {
+        "rate": 4.6,
+        "count": 295
+      }
+    },
+    {
+      "id": 18,
+      "title": "Blueberry Cheesecake",
+      "price": 150,
+      "description": "Cheesecake ice cream with blueberry swirls.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Blueberry+Cheesecake",
+      "rating": {
+        "rate": 4.8,
+        "count": 330
+      }
+    },
+    {
+      "id": 19,
+      "title": "Maple Walnut",
+      "price": 98,
+      "description": "Sweet maple syrup-flavored ice cream with walnut chunks.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Maple+Walnut",
+      "rating": {
+        "rate": 4.7,
+        "count": 250
+      }
+    },
+    {
+      "id": 20,
+      "title": "Hazelnut Heaven",
+      "price": 110,
+      "description": "Rich hazelnut ice cream with chocolate swirls.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Hazelnut+Heaven",
+      "rating": {
+        "rate": 4.9,
+        "count": 360
+      }
+    },
+    {
+      "id": 21,
+      "title": "Raspberry Ripple",
+      "price": 68,
+      "description": "Creamy vanilla ice cream with raspberry ripples.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Raspberry+Ripple",
+      "rating": {
+        "rate": 4.8,
+        "count": 290
+      }
+    },
+    {
+      "id": 22,
+      "title": "Banana Split Sundae",
+      "price": 95,
+      "description": "Banana ice cream with chocolate and cherry toppings.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Banana+Split",
+      "rating": {
+        "rate": 4.6,
+        "count": 310
+      }
+    },
+    {
+      "id": 23,
+      "title": "Coconut Dream",
+      "price": 80,
+      "description": "Smooth coconut ice cream with chocolate shavings.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Coconut+Dream",
+      "rating": {
+        "rate": 4.7,
+        "count": 280
+      }
+    },
+    {
+      "id": 24,
+      "title": "Key Lime Pie",
+      "price": 99,
+      "description": "Tart lime ice cream with graham cracker pieces.",
+      "category": "Canned Ice Cream",
+      "image": "https://dummyimage.com/300x300/000/fff.jpg&text=Key+Lime+Pie",
+      "rating": {
+        "rate": 4.9,
+        "count": 400
+      }
+    }
+  ]
+}
