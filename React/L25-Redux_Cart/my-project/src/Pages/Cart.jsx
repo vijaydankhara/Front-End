@@ -90,8 +90,9 @@ const Cart = () => {
             </tbody>
           </table>
         ) : (
-          <div className="container m-2 empty-cart-message">
-            <h2 className="text-wrap">Your Cart is Empty</h2>
+          <div className="w-screen h-screen object-cover">
+          <img src="https://www.vinsolutions.com/wp-content/uploads/sites/2/vinsolutions/media/Vin-Images/news-blog/Empty_Shopping_Cart_blog.jpg" alt="" />
+        
           </div>
         )}
       </div>

@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full p-6 flex justify-around items-center z-50 sticky top-0 bg-gray-300 border-b-4 border-black">
+      <div className="w-full p-6 flex justify-around items-center z-50 sticky top-0 bg-[#ee933d] border-b-4 border-[#4229ff]">
         <div className="container">
           <div className="flex justify-between">
             <div>
