@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   empty_wishlist,
   remove_wishlist,
 } from "../redux/reduxWishlist/WishlistAction";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const Wishlist = () => {
   const dataWh = useSelector((state) => state.wishlist);
   const dispatch = useDispatch();
 
-  console.log("wishlistdata", dataWh);
+  const [removingId, setRemovingId] = useState(null);
+
+  const handleRemoveClick = (id) => {
+    setRemovingId(id);
+    setTimeout(() => {
+      dispatch(remove_wishlist(id));
+      setRemovingId(null);
+    }, 1000);
+  };
 
   return (
     <div className="container mx-5">
@@ -21,7 +31,7 @@ const Wishlist = () => {
 
       <div className="flex justify-center items-center h-lvh text-center">
         {dataWh.length > 0 ? (
-          <table className="table-fixed w-[800px]">
+          <table className="table-fixed w-[500px]">
             <thead>
               <tr>
                 <th>Image</th>
@@ -37,21 +47,26 @@ const Wishlist = () => {
                     <img
                       src={item.image}
                       alt="wishlistimage"
-                      className="h-auto w-28"
+                      className="h-auto w-16"
                     />
                   </td>
                   <td>
                     <h2 className="text-wrap w-28 mx-auto">{item.title}</h2>
                   </td>
-                  <td>
+                  <td className="line-clamp-2">
                     <p>{item.description}</p>
                   </td>
                   <td>
                     <button
-                      onClick={() => dispatch(remove_wishlist(item.id))} // Fixed to use remove_wishlist action
-                      className="btn"
+                      onClick={() => handleRemoveClick(item.id)}
+                      className=""
                     >
-                      Remove
+                      <FontAwesomeIcon
+                        icon={faTrash}
+                        className={`text-[#000] hover:text-[#ff0000] text-2xl ${
+                          removingId === item.id ? "animate-spin" : ""
+                        }`}
+                      />
                     </button>
                   </td>
                 </tr>
