@@ -14,6 +14,7 @@ import {
   faPlus,
   faMinus,
 } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const Cart = () => {
   const data1 = useSelector((state) => state.cart);
@@ -120,14 +121,14 @@ const Cart = () => {
           </table>
         ) : (
           <div className="flex justify-center items-center h-[500px] ">
-            <a href="" to="/">
+            <NavLink to="/">
               <img
                 // src="https://zoe.menu/assets/images/empty_cart.gif"
                 src=" https://cdn.dribbble.com/users/2046015/screenshots/4591856/first_white_girl_drbl.gif"
                 alt="Empty Cart"
                 className="object-cover"
               />
-            </a>
+            </NavLink>
           </div>
         )}
       </div>

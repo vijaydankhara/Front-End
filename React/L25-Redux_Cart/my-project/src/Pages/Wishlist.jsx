@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
   empty_wishlist,
@@ -22,15 +23,7 @@ const Wishlist = () => {
     }, 1000);
   };
 
-  // INCREMENT PRODUCT
-  const handleIncrement = (id) => {
-    dispatch(increment(id));
-  };
 
-  // DECREMENT PRODUCT
-  const handleDecrement = (id) => {
-    dispatch(decrement(id));
-  };
 
   return (
     <div className="container mx-auto ">
@@ -48,7 +41,6 @@ const Wishlist = () => {
                 <th className="py-2 px-4 border">Image</th>
                 <th className="py-2 px-4 border">Title</th>
                 <th className="py-2 px-4 border">Description</th>
-                <th className="py-2 px-4 border">Quantity</th>
                 <th className="py-2 px-4 border">Actions</th>
               </tr>
             </thead>
@@ -68,23 +60,7 @@ const Wishlist = () => {
                   <td className="py-4 px-4 border">
                     <p className="line-clamp-2">{item.description}</p>
                   </td>
-                  <td className="py-4 px-4 border">
-                    <div className="flex justify-center items-center space-x-2">
-                      <button onClick={() => handleDecrement(item.id)}>
-                        <FontAwesomeIcon
-                          icon={faMinus}
-                          className="text-xl cursor-pointer"
-                        />
-                      </button>
-                      <span>{item.quantity}</span>
-                      <button onClick={() => handleIncrement(item.id)}>
-                        <FontAwesomeIcon
-                          icon={faPlus}
-                          className="text-xl cursor-pointer"
-                        />
-                      </button>
-                    </div>
-                  </td>
+                  
                   <td className="py-4 px-4 border">
                     <button
                       onClick={() => handleRemoveClick(item.id)}
@@ -104,13 +80,14 @@ const Wishlist = () => {
           </table>
         ) : (
           <div className="flex justify-center items-center h-[500px]">
-            <a href="" to="/">
+            <NavLink to="/">
+
               <img
                 src="https://fashionsupreme1.wawbizstores.com/assets/images/wishlist.png"
                 alt="Empty Wishlist Cart"
                 className="object-cover"
               />
-            </a>
+            </NavLink>
           </div>
         )}
       </div>
