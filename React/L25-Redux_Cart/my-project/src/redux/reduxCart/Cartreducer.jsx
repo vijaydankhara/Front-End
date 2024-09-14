@@ -9,7 +9,6 @@ import {
 
 const CartReducer = (data = [], action) => {
   switch (action.type) {
-    
     case ADD_TO_CART:
       console.log("addToCartData", action);
       return [action.data, ...data];
@@ -27,14 +26,39 @@ const CartReducer = (data = [], action) => {
       return {
         ...state,
       };
+
     case INCREMENT:
-      return {
-        ...state,
-      };
+      return data.map((item) => {
+        if (item.id === action.data) {
+          return {
+            ...item,
+            quantity: item.quantity + 1,
+            rate: item.rate + item.newprice,
+          };
+        }
+        return item;
+      });
+
     case DECREMENT:
-      return {
-        ...state,
-      };
+      return data.map((item) => {
+        if (item.id === action.data && item.quantity > 1) {
+          return {
+            ...item,
+            quantity: item.quantity - 1,
+            rate: item.rate - item.newprice,
+          };
+        }
+        return item;
+      });
+
+    // case INCREMENT:
+    //   return {
+    //     ...state,
+    //   };
+    // case DECREMENT:
+    //   return {
+    //     ...state,
+    //   };
     default:
       return data;
   }

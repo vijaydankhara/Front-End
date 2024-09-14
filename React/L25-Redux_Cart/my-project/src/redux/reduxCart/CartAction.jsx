@@ -29,16 +29,16 @@ export function cart_to_wishlist(data){
     }
 }
 
-export function increment(data){
+export function increment(id){
     return{
         type:INCREMENT,
-        data
+        data : id 
     }
 }
 
-export function decrement(data){
+export function decrement(id){
     return{
         type:DECREMENT,
-        data
+        data : id
     }
 }

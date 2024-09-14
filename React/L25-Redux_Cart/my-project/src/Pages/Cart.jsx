@@ -1,9 +1,19 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { remove_cart, empty_cart } from "../redux/reduxCart/CartAction";
+import {
+  remove_cart,
+  empty_cart,
+  increment,
+  decrement,
+} from "../redux/reduxCart/CartAction";
 import { add_wishlist } from "../redux/reduxWishlist/WishlistAction";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash, faHeart } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTrash,
+  faHeart,
+  faPlus,
+  faMinus,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Cart = () => {
   const data1 = useSelector((state) => state.cart);
@@ -24,75 +34,100 @@ const Cart = () => {
     dispatch(remove_cart(item.id)); // Remove from cart
   };
 
+  // INCREMENT PRODUCT
+  const handleIncrement = (id) => {
+    dispatch(increment(id));
+  };
+
+  // DECREMENT PRODUCT
+  const handleDecrement = (id) => {
+    dispatch(decrement(id));
+  };
+
   return (
-    <div className="container mx-5">
-      <div>
-        <button onClick={() => dispatch(empty_cart())} className="btn ml-5">
+    <div className="container mx-auto">
+      <div className="mb-2 pr-2 text-right">
+        <button onClick={() => dispatch(empty_cart())} className="btn">
           Empty Cart
         </button>
       </div>
 
-      <div className="flex justify-center items-center h-lvh text-center">
+      <div className="overflow-x-auto w-full">
         {data1.length > 0 ? (
-          <table className="table-fixed w-[500px]">
+          <table className="min-w-full bg-white border border-gray-200">
             <thead>
-              <tr>
-                <th>Image</th>
-                <th>Title</th>
-                <th>Price</th>
-                <th>Actions</th>
+              <tr className="bg-gray-200">
+                <th className="py-2 px-4 border">Image</th>
+                <th className="py-2 px-4 border">Title</th>
+                <th className="py-2 px-4 border">Price</th>
+                <th className="py-2 px-4 border">Quantity</th>
+                <th className="py-2 px-4 border">Actions</th>
               </tr>
             </thead>
             <tbody>
-              {data1.map((item) => {
-                return (
-                  <tr className="border" key={item.id}>
-                    <td>
-                      <img
-                        src={item.image}
-                        alt="cartimage"
-                        className="h-auto w-16"
-                      />
-                    </td>
-                    <td className="">
-                      <h2 className="text-wrap w-28 mx-auto">{item.title}</h2>
-                    </td>
-                    <td>
-                      <p>${item.price}</p>
-                    </td>
-                    <td className="flex justify-center items-center gap-4">
+              {data1.map((item) => (
+                <tr key={item.id} className="text-center border-t">
+                  <td className="py-4 px-4 border">
+                    <img
+                      src={item.image}
+                      alt="cartimage"
+                      className="h-auto w-16 mx-auto"
+                    />
+                  </td>
+                  <td className="py-4 px-4 border">{item.title}</td>
+                  <td className="py-4 px-4 border">${item.price}</td>
+                  <td className="py-4 px-4 border">
+                    <div className="flex justify-center items-center space-x-2">
+                      <button onClick={() => handleDecrement(item.id)}>
+                        <FontAwesomeIcon
+                          icon={faMinus}
+                          className="text-xl cursor-pointer"
+                        />
+                      </button>
+                      <span>{item.quantity}</span>
+                      <button onClick={() => handleIncrement(item.id)}>
+                        <FontAwesomeIcon
+                          icon={faPlus}
+                          className="text-xl cursor-pointer"
+                        />
+                      </button>
+                    </div>
+                  </td>
+                  <td className="py-4 px-4 border">
+                    <div className="flex justify-center space-x-4">
                       <button
                         onClick={() => handleRemoveClick(item.id)}
-                        className="p-2  rounded"
+                        className="p-2 text-red-500 hover:text-red-700"
                       >
                         <FontAwesomeIcon
                           icon={faTrash}
-                          className={`text-[#000] hover:text-[#ff0000] text-2xl ${
+                          className={`text-2xl ${
                             removingId === item.id ? "animate-spin" : ""
                           }`}
                         />
                       </button>
-
-                      {/* Add to Wishlist Button */}
                       <button
                         onClick={() => handleAddToWishlist(item)}
-                        className="p-2  rounded"
+                        className="p-2 text-blue-500 hover:text-red-500"
                       >
-                        <FontAwesomeIcon
-                          icon={faHeart}
-                          className="text-[#343eff] hover:text-[#ff0000] text-2xl"
-                        />
+                        <FontAwesomeIcon icon={faHeart} className="text-2xl" />
                       </button>
-                    </td>
-                  </tr>
-                );
-              })}
+                    </div>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         ) : (
-          <div className="w-screen h-screen object-cover">
-          <img src="https://www.vinsolutions.com/wp-content/uploads/sites/2/vinsolutions/media/Vin-Images/news-blog/Empty_Shopping_Cart_blog.jpg" alt="" />
-        
+          <div className="flex justify-center items-center h-[500px] ">
+            <a href="" to="/">
+              <img
+                // src="https://zoe.menu/assets/images/empty_cart.gif"
+                src=" https://cdn.dribbble.com/users/2046015/screenshots/4591856/first_white_girl_drbl.gif"
+                alt="Empty Cart"
+                className="object-cover"
+              />
+            </a>
           </div>
         )}
       </div>
