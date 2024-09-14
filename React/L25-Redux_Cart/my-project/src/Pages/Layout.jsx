@@ -10,6 +10,8 @@ import Wishlist from "./Wishlist";
 import AboutUs from "./AboutUs";
 import Error404 from "./Error404";
 import Cart from "./Cart";
+import Login from "./Login";
+import Profile from "./Profile";
 
 const PageRouter = createBrowserRouter([
   {
@@ -55,6 +57,14 @@ const PageRouter = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },
