@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+
+  .heading{
+    @apply p-2 bg-purple-500 text-white text-center
+  }
+}
+  
+
+.empty-cart-message {
+  text-align: center;
+  font-size: 50px;
+  color: #ff0000;
+  
+}
+
+
+.btn {
+  border-radius: 9999px;     
+  background-color: #1f2937; 
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 16px;
+  transition: background-color 0.7s ease; 
+}
+
+.btn:hover {
+  background-color: #ff0000;
+}
