@@ -24,7 +24,7 @@ const Profile = ({ onClose }) => {
             <img
               src={student.image || defaultImage}
               alt="Avatar"
-              className="w-24 h-24 rounded-full items-center transform transition duration-700 hover:scale-125"
+              className="w-24 h-24 rounded-full items-center transform transition duration-700 hover:scale-110"
               onError={(e) => {
                 e.target.src = defaultImage;
               }}
