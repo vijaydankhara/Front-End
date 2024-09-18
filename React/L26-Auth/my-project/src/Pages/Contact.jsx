@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div>
-      <h1 className='heading'>This is Contact Page</h1>
+
       <div className="mx-auto max-w-7xl px-4">
         {/* Hero Map */}
         <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24">

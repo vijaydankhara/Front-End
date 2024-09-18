@@ -91,7 +91,7 @@ const AboutUs = () => {
 
   return (
     <div>
-      <h1 className='heading'>This is AboutUs Page</h1>
+
       <div>
         <div className="mx-auto max-w-7xl px-4">
           {/* Hero Map */}
