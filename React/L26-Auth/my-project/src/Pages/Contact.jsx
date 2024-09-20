@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const Contact = () => {
   return (
     <div>
-
       <div className="mx-auto max-w-7xl px-4">
         {/* Hero Map */}
         <div className="flex flex-col space-y-8 pb-10 pt-12 md:pt-24">
@@ -16,8 +15,9 @@ const Contact = () => {
             Love to hear from you
           </p>
           <p className="mx-auto max-w-4xl text-center text-base text-gray-600 md:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veritatis voluptates
-            neque itaque repudiandae sint, explicabo assumenda quam ratione placeat?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            veritatis voluptates neque itaque repudiandae sint, explicabo
+            assumenda quam ratione placeat?
           </p>
         </div>
         <div className="mx-auto max-w-7xl py-12 md:py-24">
@@ -25,7 +25,9 @@ const Contact = () => {
             {/* contact from */}
             <div className="flex items-center justify-center">
               <div className="px-2 md:px-12">
-                <p className="text-2xl font-bold text-gray-900 md:text-4xl">Get in touch</p>
+                <p className="text-2xl font-bold text-gray-900 md:text-4xl">
+                  Get in touch
+                </p>
                 <p className="mt-4 text-lg text-gray-600">
                   Our friendly team would love to hear from you.
                 </p>
@@ -146,22 +148,34 @@ const Contact = () => {
             <div className="w-auto p-8">
               <ul className="-m-5 flex flex-wrap items-center">
                 <li className="p-5">
-                  <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                  <a
+                    className="font-medium text-gray-600 hover:text-gray-700"
+                    href="#"
+                  >
                     Privacy Policy
                   </a>
                 </li>
                 <li className="p-5">
-                  <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                  <a
+                    className="font-medium text-gray-600 hover:text-gray-700"
+                    href="#"
+                  >
                     Terms of Service
                   </a>
                 </li>
                 <li className="p-5">
-                  <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                  <a
+                    className="font-medium text-gray-600 hover:text-gray-700"
+                    href="#"
+                  >
                     Return Policy
                   </a>
                 </li>
                 <li className="p-5">
-                  <a className="font-medium text-gray-600 hover:text-gray-700" href="#">
+                  <a
+                    className="font-medium text-gray-600 hover:text-gray-700"
+                    href="#"
+                  >
                     Contact Us
                   </a>
                 </li>
@@ -229,7 +243,7 @@ const Contact = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

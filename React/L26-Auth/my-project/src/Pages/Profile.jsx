@@ -1,70 +1,42 @@
-import React from "react";
+import React from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
+import { useNavigate } from 'react-router-dom';
 
-const Profile = ({ onClose }) => {
-  const student = {
-    firstname: "Virat",
-    lastname: "Kohli",
-    age: 35,
-    gender: "Male",
-    location: "Delhi, India",
-    email: "viratkohli@anushka.com",
-    phone: "+91-9876543210",
-    image:
-      "https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_320,q_50/lsci/db/PICTURES/CMS/316600/316605.png",
+const Profile = () => {
+  const { user, isAuthenticated, isLoading, loginWithRedirect, logout } = useAuth0();
+  const navigate = useNavigate();
+
+  if (isLoading) {
+    return <div>Loading.....</div>;
+  }
+
+  if (!isAuthenticated) {
+    loginWithRedirect();
+  }
+
+  const handleLogout = () => {
+    const confirmed = window.confirm(`Your user, ${user.name}, is about to log out. Are you sure?`);
+    if (confirmed) {
+      logout({ returnTo: window.location.origin });
+    }
   };
 
-  const defaultImage =
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTGqEx_vqU2paNsNpDL1EjIpKCGXnoIdXrti48mthxcQE-BzumbnfkU8tWFqHXEH5rxFY&usqp=CAU";
-
   return (
-    <div className="fixed mt-36 inset-0 flex items-center justify-center z-50 px-4">
-      <div className="bg-white border-2 border-[#151580] p-6 rounded-lg shadow-lg max-w-lg w-full relative md:max-w-md">
-        <div className="bg-[#3819d4] p-6 rounded-t-lg flex flex-col items-center">
-          <div className="bg-white p-2 rounded-full -mt-16">
-            <img
-              src={student.image || defaultImage}
-              alt="Avatar"
-              className="w-24 h-24 rounded-full items-center transform transition duration-700 hover:scale-110"
-              onError={(e) => {
-                e.target.src = defaultImage;
-              }}
-            />
-          </div>
-          <div className="mt-4 text-center">
-            <p className="text-white font-bold text-lg uppercase">
-              {student.firstname} {student.lastname}
+    isAuthenticated && (
+      <div className="profile-container ">
+        <div className="card profile-card">
+          <div className="card-body">
+            <h5 className="text-center font-bold">User Profile</h5>
+            <p className="text-[#2222ff]">
+              <strong className="text-[#000]">Email:</strong> {user.email}
             </p>
+            <button className="btn logout-btn" onClick={handleLogout}>
+              Logout
+            </button>
           </div>
         </div>
-        <div className="bg-white p-4 text-center">
-          <div className="mt-4 text-left space-y-2">
-            <p className="text-sm text-gray-600">
-              <strong>Age:</strong> {student.age}
-            </p>
-            <p className="text-sm text-gray-600">
-              <strong>Gender:</strong> {student.gender}
-            </p>
-            <p className="text-sm text-gray-600">
-              <strong>Location:</strong> {student.location}
-            </p>
-            <p className="text-sm text-gray-600">
-              <strong>Email:</strong> {student.email}
-            </p>
-            <p className="text-sm text-gray-600">
-              <strong>Phone:</strong> {student.phone}
-            </p>
-          </div>
-        </div>
-
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          className="absolute top-2 right-2 text-gray-700 text-xl font-bold hover:text-[#ff0000]"
-        >
-          &times;
-        </button>
       </div>
-    </div>
+    )
   );
 };
 

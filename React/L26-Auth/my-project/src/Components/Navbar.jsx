@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
-import { IoMdLogIn } from "react-icons/io";
+import { IoIosLogIn } from "react-icons/io";
 import "./Navbar.css";
 import { useSelector } from "react-redux";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
+  const { loginWithRedirect, isAuthenticated } = useAuth0();
+
   const result = useSelector((state) => state.cart);
   const resultWish = useSelector((state) => state.wishlist);
   const [activeMenu, setActiveMenu] = useState(null);
@@ -46,7 +49,7 @@ const Navbar = () => {
               <div className="relative">
                 <NavLink to="/cart">
                   <FaShoppingCart className="text-2xl text-gray-950 hover:text-[#ff0000] mr-5" />
-                  <span className="absolute top-0 right-5 transform translate-x-1/2 -translate-y-1/2 border-2 rounded-full px-1  text-[#fff] bg-[#ff0000] text-xs">
+                  <span className="absolute top-0 right-5 transform translate-x-1/2 -translate-y-1/2 border-2 rounded-full px-1 text-[#fff] bg-[#ff0000] text-xs">
                     {result.length}
                   </span>
                 </NavLink>
@@ -54,23 +57,26 @@ const Navbar = () => {
               <div className="relative">
                 <NavLink to="/wishlist">
                   <FaHeart className="text-2xl text-gray-950 hover:text-[#ff0000] mr-5" />
-                  <span className="absolute top-0 right-5  transform translate-x-1/2 -translate-y-1/2 border-2 rounded-full px-1  text-[#fff] bg-[#ff0000] text-xs">
+                  <span className="absolute top-0 right-5 transform translate-x-1/2 -translate-y-1/2 border-2 rounded-full px-1 text-[#fff] bg-[#ff0000] text-xs">
                     {resultWish.length}
                   </span>
                 </NavLink>
               </div>
 
-              <div className="relative">
-                <NavLink to="/profile">
-                  <CgProfile className="text-3xl text-gray-950 hover:text-[#ff0000] mr-5" />
-                </NavLink>
-              </div>
-
-              <div className="relative">
-                <NavLink to="/login">
-                <IoMdLogIn className="text-3xl text-gray-950 hover:text-[#ff0000] mr-5" />
-                </NavLink>
-              </div>
+           
+              {isAuthenticated ? (
+                <div className="relative">
+                  <NavLink to="/profile">
+                    <CgProfile className="text-3xl text-gray-950 hover:text-[#ff0000] mr-5" />
+                  </NavLink>
+                </div>
+              ) : (
+                <div className="relative">
+                  <button onClick={() => loginWithRedirect()}>
+                    <IoIosLogIn className="text-2xl text-gray-950 hover:text-[#ff0000] mr-5" />
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </div>
