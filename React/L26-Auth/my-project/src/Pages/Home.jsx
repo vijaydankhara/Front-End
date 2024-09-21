@@ -1,11 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { add_cart } from "../redux/reduxCart/CartAction";
-import { add_wishlist, remove_wishlist } from "../redux/reduxWishlist/WishlistAction";
 import axios from "axios";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
-import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
+import React, { useState, useEffect } from "react";
 
 const Home = () => {
   const [product, setProduct] = useState([]);
@@ -16,22 +10,6 @@ const Home = () => {
       setProduct(res.data);
     });
   }, []);
-
-  const dispatch = useDispatch();
-  
-  // Access the wishlist from Redux store
-  const wishlist = useSelector((state) => state.wishlist);
-
-  // Check if the item is in the wishlist
-  const isInWishlist = (item) => wishlist.some((wishlistItem) => wishlistItem.id === item.id);
-
-  const handleWishlistToggle = (item) => {
-    if (isInWishlist(item)) {
-      dispatch(remove_wishlist(item)); // Remove from wishlist
-    } else {
-      dispatch(add_wishlist(item)); // Add to wishlist
-    }
-  };
 
   return (
     <div>
@@ -46,19 +24,16 @@ const Home = () => {
                   className="h-[200px] w-full object-cover rounded-t-md"
                 />
                 <div className="p-4 flex-grow">
-           
                   <div className="flex justify-between items-center">
                     <h1 className="text-lg font-semibold line-clamp-1">
                       {item.title}
                     </h1>
-                   
                   </div>
 
                   <p className="mt-2 text-sm text-gray-600 line-clamp-2">
                     {item.description}
                   </p>
                 </div>
-                
               </div>
             </div>
           );
