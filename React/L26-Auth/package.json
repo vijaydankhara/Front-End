@@ -4,6 +4,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "dotenv": "^16.4.5",
     "lucide-react": "^0.441.0",
     "mdb-react-ui-kit": "^8.0.0"
   }
