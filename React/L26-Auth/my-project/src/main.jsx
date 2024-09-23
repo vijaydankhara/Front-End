@@ -14,8 +14,9 @@ const authClientId = import.meta.env.VITE_REACT_APP_AUTH0_CLIENT_ID;
 if (!authDomain || !authClientId) {
   console.error("Auth0 environment variables are missing.");
 } else {
-  console.log("Auth0 Domain:", authDomain);
-  console.log("Auth0 Client ID:", authClientId);
+  // console.log("Auth0 Domain:", authDomain);
+  // console.log("Auth0 Client ID:", authClientId);
+  
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(

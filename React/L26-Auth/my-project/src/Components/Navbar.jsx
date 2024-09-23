@@ -6,6 +6,7 @@ import { IoIosLogIn } from "react-icons/io";
 import "./Navbar.css";
 import { useSelector } from "react-redux";
 import { useAuth0 } from "@auth0/auth0-react";
+import logo from "../assets/vd.png";
 
 const Navbar = () => {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
@@ -24,8 +25,11 @@ const Navbar = () => {
         <div className="container">
           <div className="flex justify-between">
             <div>
-              <NavLink to="/" className="font-bold text-[#000] hover:text-[#ff0000]">
-                LOGO
+              <NavLink
+                to="/"
+                className="font-bold text-[#000] hover:text-[#ff0000]"
+              >
+                <img src={logo} alt="" className="size-16" />
               </NavLink>
             </div>
             <div className="flex items-center justify-between ml-5">
@@ -63,7 +67,6 @@ const Navbar = () => {
                 </NavLink>
               </div>
 
-           
               {isAuthenticated ? (
                 <div className="relative">
                   <NavLink to="/profile">
