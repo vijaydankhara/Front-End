@@ -29,7 +29,7 @@ const Navbar = () => {
                 to="/"
                 className="font-bold text-[#000] hover:text-[#ff0000]"
               >
-                <img src={logo} alt="" className="size-16" />
+                <img src={logo} alt="" className="size-12" />
               </NavLink>
             </div>
             <div className="flex items-center justify-between ml-5">
