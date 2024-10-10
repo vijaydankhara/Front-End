@@ -91,7 +91,7 @@ const Form = () => {
         </form>
       </div>
       
-      {/* Display submitted data if available */}
+
       {submittedData && (
         <div className="bg-white p-4 rounded-lg shadow-md w-96 border-2 border-green-700">
           <h2 className='text-xl font-bold text-center text-sky-600 mb-2'>Submitted Data</h2>
