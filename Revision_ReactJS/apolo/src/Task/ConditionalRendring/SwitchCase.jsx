@@ -7,28 +7,28 @@ const SwitchCase = () => {
   let dayMessage;
   switch (dayName) {
     case 'Monday':
-      dayMessage = <p>Start of the week! Let's be productive.</p>;
+      dayMessage = <p>Start of the week! </p>;
       break;
     case 'Tuesday':
-      dayMessage = <p>It's Tuesday! Keep going strong.</p>;
+      dayMessage = <p>It's Tuesday! </p>;
       break;
     case 'Wednesday':
       dayMessage = <p>Midweek! Almost there.</p>;
       break;
     case 'Thursday':
-      dayMessage = <p>Thursday is here. The weekend is close!</p>;
+      dayMessage = <p>Thursday is here.</p>;
       break;
     case 'Friday':
-      dayMessage = <p>Friday fun day! Finish strong.</p>;
+      dayMessage = <p>Friday fun day!</p>;
       break;
     case 'Saturday':
-      dayMessage = <p>It's the weekend! Time to relax.</p>;
+      dayMessage = <p>It's the weekend!</p>;
       break;
     case 'Sunday':
-      dayMessage = <p>Sunday rest day! Prepare for the week ahead.</p>;
+      dayMessage = <p>Sunday rest day! </p>;
       break;
     default:
-      dayMessage = <p>Invalid day. Please enter a valid day of the week.</p>;
+      dayMessage = <p>Invalid day!!!</p>;
       break;
   }
 
