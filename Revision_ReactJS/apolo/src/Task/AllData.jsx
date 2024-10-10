@@ -6,6 +6,7 @@ import SwitchCase from './ConditionalRendring/SwitchCase'
 import Form from './Form/Form'
 import ToggleButton from './Toggle/Toggle'
 import Counter from './Counter/Counter'
+import Arrays from './Array/Arrays'
 
 const AllData = () => {
   return (
@@ -17,6 +18,7 @@ const AllData = () => {
       <Form/><br /><br /><br />
       <ToggleButton/><br /><br /><br />
       <Counter/><br /><br /><br />
+      <Arrays/><br /><br /><br />
     </div>
   )
 }
