@@ -3,8 +3,8 @@ import { BUY_CAKE } from './Constant'
 import { BUY_CHOCO } from './Constant'
 
 const initialState = {
-    numOfCake:12,
-    numOfChoco:8
+    numOfCake:10,
+    numOfChoco:5
 }
 
 const Reducer = (state = initialState , action) => {
