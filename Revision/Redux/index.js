@@ -60,7 +60,7 @@ const unsubscribe = store.subscribe(() => console.log("This Is A Update State",s
 store.dispatch(buy_cake())
 store.dispatch(buy_cake())
 store.dispatch(buy_coco())
-store.dispatch(buy_coco())
+store.dispatch(buy_coco()) 
 store.dispatch(buy_burger())
 
 unsubscribe();

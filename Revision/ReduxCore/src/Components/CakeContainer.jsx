@@ -10,7 +10,7 @@ const CakeContainer = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="p-6 bg-white rounded-xl shadow-md text-center">
-        <h1 className="text-2xl font-bold">Redux Store</h1>
+        <h1 className="text-2xl font-bold">Vijay Store</h1>
         <div className="space-y-4 mt-4">
           <div className="flex justify-between items-center">
             <span className="font-semibold">Cakes:</span> <span>{numOfCakes}</span>
